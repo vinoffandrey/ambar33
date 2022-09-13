@@ -151,7 +151,7 @@ body * {
 Снипет (HTML): cnt
 */
 [class*=__container] {
-  max-width: 87.5rem;
+  max-width: 100rem;
   box-sizing: content-box;
   margin: 0 auto;
   padding: 0 0.9375rem;
