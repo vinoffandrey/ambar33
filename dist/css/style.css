@@ -151,7 +151,7 @@ body * {
 Снипет (HTML): cnt
 */
 [class*=__container] {
-  max-width: 87.5rem;
+  max-width: 100rem;
   box-sizing: content-box;
   margin: 0 auto;
   padding: 0 0.9375rem;
@@ -267,7 +267,7 @@ body.popup-show::after {
   font-weight: 900;
   font-size: 28px;
   color: #000;
-  margin-bottom: calc(1.0625rem + 0.1875 * (100vw - 89.375rem) / 30.625);
+  margin-bottom: calc(1.0625rem + 0.1875 * (100vw - 101.875rem) / 18.125);
 }
 .popup__subtitle {
   font-family: "Montserrat";
@@ -275,7 +275,7 @@ body.popup-show::after {
   font-size: 16px;
   color: #000;
   line-height: 1.6;
-  margin-bottom: calc(1.0625rem + 0.1875 * (100vw - 89.375rem) / 30.625);
+  margin-bottom: calc(1.0625rem + 0.1875 * (100vw - 101.875rem) / 18.125);
 }
 .main__right-form input {
   width: 100%;
@@ -290,7 +290,7 @@ body.popup-show::after {
   padding: 16px 12.8px;
   font-size: 16px;
   cursor: initial;
-  margin-bottom: calc(1.0625rem + 0.1875 * (100vw - 89.375rem) / 30.625);
+  margin-bottom: calc(1.0625rem + 0.1875 * (100vw - 101.875rem) / 18.125);
 }
 .main__right-form button {
   letter-spacing: 0.1em;
@@ -313,7 +313,7 @@ body.popup-show::after {
   overflow: hidden;
   cursor: pointer;
   transition: all 0.3s ease 0s;
-  margin-bottom: calc(1.0625rem + 0.1875 * (100vw - 89.375rem) / 30.625);
+  margin-bottom: calc(1.0625rem + 0.1875 * (100vw - 101.875rem) / 18.125);
 }
 .main__right-subtitle {
   text-align: left;
@@ -339,7 +339,7 @@ body.popup-show::after {
   font-weight: 900;
   font-size: 28px;
   color: #000;
-  margin-bottom: calc(1.0625rem + 0.1875 * (100vw - 89.375rem) / 30.625);
+  margin-bottom: calc(1.0625rem + 0.1875 * (100vw - 101.875rem) / 18.125);
 }
 .popup__tuya-body {
   display: flex;
@@ -357,7 +357,7 @@ body.popup-show::after {
   font-size: 14px;
   line-height: 1.1;
   text-align: left;
-  margin-bottom: calc(0.75rem + 0.1875 * (100vw - 89.375rem) / 30.625);
+  margin-bottom: calc(0.75rem + 0.1875 * (100vw - 101.875rem) / 18.125);
 }
 .popup__tuya-right {
   flex: 0 1 50%;
@@ -371,7 +371,7 @@ body.popup-show::after {
   font-size: 14px;
   line-height: 1.1;
   text-align: left;
-  margin-bottom: calc(0.75rem + 0.1875 * (100vw - 89.375rem) / 30.625);
+  margin-bottom: calc(0.75rem + 0.1875 * (100vw - 101.875rem) / 18.125);
 }
 
 [class*=-ibg] {
@@ -393,14 +393,14 @@ body.popup-show::after {
 .button {
   font-family: "Montserrat";
   display: inline-block;
-  font-size: calc(0.9375rem + 0.0625 * (100vw - 89.375rem) / 30.625);
+  font-size: calc(0.9375rem + 0.0625 * (100vw - 101.875rem) / 18.125);
   line-height: 1.2;
   font-weight: 700;
   color: #000;
-  padding-right: calc(2.1875rem + 0.3125 * (100vw - 89.375rem) / 30.625);
-  padding-left: calc(2.1875rem + 0.3125 * (100vw - 89.375rem) / 30.625);
-  padding-top: calc(0.875rem + 0.0625 * (100vw - 89.375rem) / 30.625);
-  padding-bottom: calc(0.875rem + 0.0625 * (100vw - 89.375rem) / 30.625);
+  padding-right: calc(2.1875rem + 0.3125 * (100vw - 101.875rem) / 18.125);
+  padding-left: calc(2.1875rem + 0.3125 * (100vw - 101.875rem) / 18.125);
+  padding-top: calc(0.875rem + 0.0625 * (100vw - 101.875rem) / 18.125);
+  padding-bottom: calc(0.875rem + 0.0625 * (100vw - 101.875rem) / 18.125);
   background-color: #f0a116;
   transition: all 0.3s ease 0s;
   position: relative;
