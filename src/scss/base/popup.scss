@@ -1,6 +1,6 @@
 body::after {
 	content: "";
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.65);
 	position: fixed;
 	width: 100%;
 	height: 100%;
@@ -52,72 +52,109 @@ body.popup-show::after {
 	text-align: center;
 	transform: scale(0);
 	transition: transform 0.3s ease 0s;
-	background-color: #eee;
-	padding: rem(40);
+	background-color: white;
+	padding: rem(20);
 	width: 100%;
-	max-width: rem(450);
-	border-radius: rem(20);
+	max-width: rem(600);
+	border: 1px solid #E4E4E4;
+	box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.15);
+	border-radius: 14px;
 	.lock & {
 		visibility: visible;
 	}
 	@media (max-width: $mobileSmall) {
 		padding: rem(20);
+		max-width: rem(400);
 	}
 }
 
 .popup {
 	&__close {
 		position: absolute;
-		right: -10px;
-		top: -10px;
-		width: 25px;
-		height: 25px;
-		background-color: #eee;
-		border-radius: 50%;
-		border: 1px solid #000;
+		right: 0px;
+		top: -40px;
+		width: 16px;
+		height: 16px;
+		background: none;
 		&::before {
 			content: "";
+			background: none;
 			top: 11px;
 			left: 4px;
 			position: absolute;
-			background-color: #000;
-			width: 15px;
-			height: 2px;
-			transform: rotate(45deg);
+			width: 16px;
+			height: 16px;
+			background-image: url('img/main/close.png');
+			background-size: contain;
+			transition: all .3s ease 0s;
 		}
-		&::after {
-			content: "";
-			top: 11px;
-			left: 4px;
-			position: absolute;
-			background-color: #000;
-			width: 15px;
-			height: 2px;
-			transform: rotate(-45deg);
-		}
+			@media (any-hover: hover){
+				&:hover{
+					&::before {
+						transform: rotate(90deg);
+					}
+				} 
+			}
 	}
 
 	&__text {
+		text-align: left;
+		margin-bottom: 10px!important;
 	}
-
 	&__title {
-		font-family: $fontFamily;
-		font-weight: 900;
-		font-size: 28px;
-		color: $mainColor;
-		@include adaptiveValue("margin-bottom", 20, 17, 1, $containerWidth, $minWidth);
+		flex: 1 1 100%;
+		margin-top: 20px;
 	}
-
-	&__subtitle {
-		font-family: $fontFamily;
-		font-weight: 400;
-		font-size: 16px;
-		color: $mainColor;
-		line-height: 1.6;
-		@include adaptiveValue("margin-bottom", 20, 17, 1, $containerWidth, $minWidth);
-	}
-
 	&__body {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	&__item {
+		flex: 1 1 calc(50% - 20px);
+		margin: 0 10px;
+		margin-bottom: 15px;
+		@media(max-width: $mobileSmall) {
+			flex: 1 1 100%;
+			margin: 0 0 15px 0;
+		}
+	}
+	&__button {
+		margin-top: 5px;
+		background: #F4831B;
+		border-radius: 7px;
+		flex: 0 1 170px;
+		color: #FFFFFF;
+		font-weight: 600;
+		font-size: 13px;
+		line-height: 120%;
+		padding: 10px 0;
+		text-align: center;
+		transition: all .3s ease 0s;
+		@media (any-hover: hover){
+			&:hover{
+				box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15); 
+			} 
+		}
+		@media(max-width: $mobileSmall) {
+			flex: 1 1 160px;
+		}
+		&.accept {
+			flex: 0 1 170px;
+			@media(max-width: $mobileSmall) {
+				flex: 0 1 140px;
+			}
+		}
+		&.sbros {
+			background: #E4E4E4;
+			color: #FFFFFF;
+			margin-left: 35px;
+			flex: 0 1 170px;
+			@media(max-width: $mobileSmall) {
+				margin-left: 20px;
+				flex: 0 1 140px;
+			}
+		}
 	}
 
 	&__input {
@@ -127,6 +164,11 @@ body.popup-show::after {
 	}
 
 	&__politics {
+	}
+}
+.popup__predlojenie .accept {
+	@media(max-width: $mobileSmall) {
+		flex: 0 1 170px;
 	}
 }
 .main {

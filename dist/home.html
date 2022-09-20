@@ -6,11 +6,8 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet"
-		href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.7/swiper-bundle.min.css?_v=20220913110232"
-		integrity="sha512-xdNgqS9I7CHbzFYjDiySh1lV5Sc4sobLLAvHLqtZY6ynlCiWpl+eGPds9CAMFFst5QgZRgd92qfeg03sl3UCjA=="
-		crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<link rel="stylesheet" href="css/style.min.css?_v=20220913110232">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.7/swiper-bundle.min.css?_v=20220920140443" integrity="sha512-xdNgqS9I7CHbzFYjDiySh1lV5Sc4sobLLAvHLqtZY6ynlCiWpl+eGPds9CAMFFst5QgZRgd92qfeg03sl3UCjA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20220920140443">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,25 +25,84 @@
 				<div class="main__container">
 					<div class="main__content-left">
 						<h1>Левый сайдбар</h1>
+						<div class="main__content-filter" data-da=".popup__body,30,1">
+							<div class="filter__title">
+								Фильтры
+							</div>
+							<div class="filter__item">
+								<p class="filter__text">
+									Цена
+								</p>
+								<div class="filter__box">
+									<div class="filter__box-price">
+										<input id="min-price" name="min_price" value="100">
+										<span></span>
+										<input id="max-price" name="max_price" value="300">
+									</div>
+									<div class="price__range" id="range" max="28420000" min="6130000">
+										<span class="bar"></span>
+										<span class="min"></span>
+										<span class="max"></span>
+									</div>
+								</div>
+							</div>
+							<div class="filter__item">
+								<p class="filter__text">
+									Бренд
+								</p>
+								<div class="filter__box" data-spollers>
+									<input type="text" class="filter__input" placeholder="Не выбрано">
+									<div class="filter__arrow" data-spoller></div>
+									<ul class="filter__dropdown">
+										<li>Бренд 1</li>
+										<li>Бренд 2</li>
+										<li>Бренд 3</li>
+										<li>Бренд 4</li>
+									</ul>
+								</div>
+							</div>
+							<div class="filter__item">
+								<p class="filter__text">
+									Жирность
+								</p>
+								<div class="filter__box" data-spollers>
+									<input type="text" class="filter__input" placeholder="Не выбрано">
+									<div class="filter__arrow" data-spoller></div>
+									<ul class="filter__dropdown">
+										<li>Жирность 1</li>
+										<li>Жирность 2</li>
+										<li>Жирность 3</li>
+										<li>Жирность 4</li>
+									</ul>
+								</div>
+							</div>
+							<div class="filter__item button">
+								<a class="filter__button accept" href="">Применить</a>
+								<a class="filter__button sbros" href="">Сбросить</a>
+							</div>
+						</div>
 					</div>
 					<div class="main__content-right">
 						<div class="main__content-title">
 							<h1>Молоко и молочные коктейли</h1>
 						</div>
 						<div class="main__content-breadcump">
-							<ul>
+							<ul class="breadcump__list" data-da=".main__content-right,30,0">
 								<li><a href="#">Продукты питания</a></li>
 								<li><a href="#">Молочные продукты, сыры, як...</a></li>
 								<li><a href="#">Молоко и молочные коктейли</a></li>
 							</ul>
-						</div>
-						<div class="main__content-filters">
-							<a class="filters__item ubivanie" href="#"></a>
-							<a class="filters__item vozrastanie" href="#"></a>
-							<a class="filters__item hit" href="#">хит</a>
-							<a class="filters__item procent" href="#">%</a>
-							<a class="filters__item new" href="#">new</a>
-							<a class="filters__item filter" href="#"></a>
+							<a href="#" data-popup="#popup__filter" class="filters__link">Фильтр по параметрам</a>
+							<div class="main__content-filters">
+								<p class="filters__text">Сортировать</p>
+								<ul class="filters__list">
+									<li><a href="#">От дешевых к дорогим</a></li>
+									<li><a href="#">От дорогих к дешевым</a></li>
+									<li><a href="#">Со скидкой</a></li>
+									<li><a href="#">По рейтингу</a></li>
+									<li><a href="#">Новый товар</a></li>
+								</ul>
+							</div>
 						</div>
 						<div class="main__content-body">
 							<div class="main__content-item">
@@ -54,43 +110,40 @@
 									<div class="item__image">
 										<span class="item__actia">Акция</span>
 										<span class="item__news">Новинка</span>
-										<div class="item__best">
+										<div class="item__best" data-da=".main__content-item,30,0">
 
 										</div>
 										<a class="item__image-link" href="#">
-											<picture>
-												<source srcset="img/main/photo.webp" type="image/webp"><img class=""
-													src="img/main/photo.png" alt="">
-											</picture>
+											<picture><source srcset="img/main/photo.webp" type="image/webp"><img class="" src="img/main/photo.png" alt=""></picture>
 										</a>
 									</div>
-									<div class="item__stars">
+									<div class="item__title" data-da=".item__bottom,30,0">
+										<a href="#">Напиток Мажитель NEO
+											0,05% персик-маракуйя 250г</a>
+									</div>
+									<div class="item__stars" data-da=".item__bottom,30,1">
 										<div class="item__stars-bg">
 
 										</div>
 									</div>
 								</div>
-								<div class="item__title">
-									<a href="#">Напиток Мажитель NEO
-										0,05% персик-маракуйя 250г</a>
-								</div>
 								<div class="item__bottom">
 									<div class="item__cost">
 										<div class="item__number">
-											45,50
-											<span>55₽</span>
+											45,50 ₽
 										</div>
-										₽ / шт.
+
 									</div>
 									<div class="item__buttons">
+
+										<a href="#" class="item__card">
+											<div class="item__card-link"></div>
+										</a>
 										<div class="item__quantity">
 											<a href="#" class="item__quantity-minus">−</a>
 											<input class="item__quantity-input" type="text" name="quantity" value="1">
 											<a href="#" class="item__quantity-plus">+</a>
 										</div>
-										<a href="#" class="item__card">
-											<div class="item__card-link"></div>
-										</a>
 									</div>
 								</div>
 							</div>
@@ -99,43 +152,40 @@
 									<div class="item__image">
 										<span class="item__actia">Акция</span>
 										<span class="item__news">Новинка</span>
-										<div class="item__best">
+										<div class="item__best" data-da=".main__content-item,30,0">
 
 										</div>
 										<a class="item__image-link" href="#">
-											<picture>
-												<source srcset="img/main/photo.webp" type="image/webp"><img class=""
-													src="img/main/photo.png" alt="">
-											</picture>
+											<picture><source srcset="img/main/photo.webp" type="image/webp"><img class="" src="img/main/photo.png" alt=""></picture>
 										</a>
 									</div>
-									<div class="item__stars">
+									<div class="item__title" data-da=".item__bottom,30,0">
+										<a href="#">Напиток Мажитель NEO
+											0,05% персик-маракуйя 250г</a>
+									</div>
+									<div class="item__stars" data-da=".item__bottom,30,1">
 										<div class="item__stars-bg">
 
 										</div>
 									</div>
 								</div>
-								<div class="item__title">
-									<a href="#">Напиток Мажитель NEO
-										0,05% персик-маракуйя 250г</a>
-								</div>
 								<div class="item__bottom">
 									<div class="item__cost">
 										<div class="item__number">
-											45,50
-											<span>55₽</span>
+											45,50 ₽
 										</div>
-										₽ / шт.
+
 									</div>
 									<div class="item__buttons">
+
+										<a href="#" class="item__card">
+											<div class="item__card-link"></div>
+										</a>
 										<div class="item__quantity">
 											<a href="#" class="item__quantity-minus">−</a>
 											<input class="item__quantity-input" type="text" name="quantity" value="1">
 											<a href="#" class="item__quantity-plus">+</a>
 										</div>
-										<a href="#" class="item__card">
-											<div class="item__card-link"></div>
-										</a>
 									</div>
 								</div>
 							</div>
@@ -144,43 +194,40 @@
 									<div class="item__image">
 										<span class="item__actia">Акция</span>
 										<span class="item__news">Новинка</span>
-										<div class="item__best">
+										<div class="item__best" data-da=".main__content-item,30,0">
 
 										</div>
 										<a class="item__image-link" href="#">
-											<picture>
-												<source srcset="img/main/photo.webp" type="image/webp"><img class=""
-													src="img/main/photo.png" alt="">
-											</picture>
+											<picture><source srcset="img/main/photo.webp" type="image/webp"><img class="" src="img/main/photo.png" alt=""></picture>
 										</a>
 									</div>
-									<div class="item__stars">
+									<div class="item__title" data-da=".item__bottom,30,0">
+										<a href="#">Напиток Мажитель NEO
+											0,05% персик-маракуйя 250г</a>
+									</div>
+									<div class="item__stars" data-da=".item__bottom,30,1">
 										<div class="item__stars-bg">
 
 										</div>
 									</div>
 								</div>
-								<div class="item__title">
-									<a href="#">Напиток Мажитель NEO
-										0,05% персик-маракуйя 250г</a>
-								</div>
 								<div class="item__bottom">
 									<div class="item__cost">
 										<div class="item__number">
-											45,50
-											<span>55₽</span>
+											45,50 ₽
 										</div>
-										₽ / шт.
+
 									</div>
 									<div class="item__buttons">
+
+										<a href="#" class="item__card">
+											<div class="item__card-link"></div>
+										</a>
 										<div class="item__quantity">
 											<a href="#" class="item__quantity-minus">−</a>
 											<input class="item__quantity-input" type="text" name="quantity" value="1">
 											<a href="#" class="item__quantity-plus">+</a>
 										</div>
-										<a href="#" class="item__card">
-											<div class="item__card-link"></div>
-										</a>
 									</div>
 								</div>
 							</div>
@@ -189,43 +236,40 @@
 									<div class="item__image">
 										<span class="item__actia">Акция</span>
 										<span class="item__news">Новинка</span>
-										<div class="item__best">
+										<div class="item__best" data-da=".main__content-item,30,0">
 
 										</div>
 										<a class="item__image-link" href="#">
-											<picture>
-												<source srcset="img/main/photo.webp" type="image/webp"><img class=""
-													src="img/main/photo.png" alt="">
-											</picture>
+											<picture><source srcset="img/main/photo.webp" type="image/webp"><img class="" src="img/main/photo.png" alt=""></picture>
 										</a>
 									</div>
-									<div class="item__stars">
+									<div class="item__title" data-da=".item__bottom,30,0">
+										<a href="#">Напиток Мажитель NEO
+											0,05% персик-маракуйя 250г</a>
+									</div>
+									<div class="item__stars" data-da=".item__bottom,30,1">
 										<div class="item__stars-bg">
 
 										</div>
 									</div>
 								</div>
-								<div class="item__title">
-									<a href="#">Напиток Мажитель NEO
-										0,05% персик-маракуйя 250г</a>
-								</div>
 								<div class="item__bottom">
 									<div class="item__cost">
 										<div class="item__number">
-											45,50
-											<span>55₽</span>
+											45,50 ₽
 										</div>
-										₽ / шт.
+
 									</div>
 									<div class="item__buttons">
+
+										<a href="#" class="item__card">
+											<div class="item__card-link"></div>
+										</a>
 										<div class="item__quantity">
 											<a href="#" class="item__quantity-minus">−</a>
 											<input class="item__quantity-input" type="text" name="quantity" value="1">
 											<a href="#" class="item__quantity-plus">+</a>
 										</div>
-										<a href="#" class="item__card">
-											<div class="item__card-link"></div>
-										</a>
 									</div>
 								</div>
 							</div>
@@ -234,43 +278,40 @@
 									<div class="item__image">
 										<span class="item__actia">Акция</span>
 										<span class="item__news">Новинка</span>
-										<div class="item__best">
+										<div class="item__best" data-da=".main__content-item,30,0">
 
 										</div>
 										<a class="item__image-link" href="#">
-											<picture>
-												<source srcset="img/main/photo.webp" type="image/webp"><img class=""
-													src="img/main/photo.png" alt="">
-											</picture>
+											<picture><source srcset="img/main/photo.webp" type="image/webp"><img class="" src="img/main/photo.png" alt=""></picture>
 										</a>
 									</div>
-									<div class="item__stars">
+									<div class="item__title" data-da=".item__bottom,30,0">
+										<a href="#">Напиток Мажитель NEO
+											0,05% персик-маракуйя 250г</a>
+									</div>
+									<div class="item__stars" data-da=".item__bottom,30,1">
 										<div class="item__stars-bg">
 
 										</div>
 									</div>
 								</div>
-								<div class="item__title">
-									<a href="#">Напиток Мажитель NEO
-										0,05% персик-маракуйя 250г</a>
-								</div>
 								<div class="item__bottom">
 									<div class="item__cost">
 										<div class="item__number">
-											45,50
-											<span>55₽</span>
+											45,50 ₽
 										</div>
-										₽ / шт.
+
 									</div>
 									<div class="item__buttons">
+
+										<a href="#" class="item__card">
+											<div class="item__card-link"></div>
+										</a>
 										<div class="item__quantity">
 											<a href="#" class="item__quantity-minus">−</a>
 											<input class="item__quantity-input" type="text" name="quantity" value="1">
 											<a href="#" class="item__quantity-plus">+</a>
 										</div>
-										<a href="#" class="item__card">
-											<div class="item__card-link"></div>
-										</a>
 									</div>
 								</div>
 							</div>
@@ -279,92 +320,254 @@
 									<div class="item__image">
 										<span class="item__actia">Акция</span>
 										<span class="item__news">Новинка</span>
-										<div class="item__best">
+										<div class="item__best" data-da=".main__content-item,30,0">
 
 										</div>
 										<a class="item__image-link" href="#">
-											<picture>
-												<source srcset="img/main/photo.webp" type="image/webp"><img class=""
-													src="img/main/photo.png" alt="">
-											</picture>
+											<picture><source srcset="img/main/photo.webp" type="image/webp"><img class="" src="img/main/photo.png" alt=""></picture>
 										</a>
 									</div>
-									<div class="item__stars">
+									<div class="item__title" data-da=".item__bottom,30,0">
+										<a href="#">Напиток Мажитель NEO
+											0,05% персик-маракуйя 250г</a>
+									</div>
+									<div class="item__stars" data-da=".item__bottom,30,1">
 										<div class="item__stars-bg">
 
 										</div>
 									</div>
 								</div>
-								<div class="item__title">
-									<a href="#">Напиток Мажитель NEO
-										0,05% персик-маракуйя 250г</a>
-								</div>
 								<div class="item__bottom">
 									<div class="item__cost">
 										<div class="item__number">
-											45,50
-											<span>55₽</span>
+											45,50 ₽
 										</div>
-										₽ / шт.
+
 									</div>
 									<div class="item__buttons">
+
+										<a href="#" class="item__card">
+											<div class="item__card-link"></div>
+										</a>
 										<div class="item__quantity">
 											<a href="#" class="item__quantity-minus">−</a>
 											<input class="item__quantity-input" type="text" name="quantity" value="1">
 											<a href="#" class="item__quantity-plus">+</a>
 										</div>
-										<a href="#" class="item__card">
-											<div class="item__card-link"></div>
-										</a>
 									</div>
 								</div>
 							</div>
-							<div class="main__content-item">
+							<div class="main__content-item mobile">
+								<div class="item__best"></div>
 								<div class="item__top">
 									<div class="item__image">
 										<span class="item__actia">Акция</span>
 										<span class="item__news">Новинка</span>
-										<div class="item__best">
 
-										</div>
 										<a class="item__image-link" href="#">
-											<picture>
-												<source srcset="img/main/photo.webp" type="image/webp"><img class=""
-													src="img/main/photo.png" alt="">
-											</picture>
+											<picture><source srcset="img/main/photo.webp" type="image/webp"><img class="" src="img/main/photo.png" alt=""></picture>
 										</a>
+									</div>
+								</div>
+
+								<div class="item__bottom">
+									<div class="item__title">
+										<a href="#">Напиток Мажитель NEO
+											0,05% персик-маракуйя 250г</a>
 									</div>
 									<div class="item__stars">
 										<div class="item__stars-bg">
 
 										</div>
 									</div>
-								</div>
-								<div class="item__title">
-									<a href="#">Напиток Мажитель NEO
-										0,05% персик-маракуйя 250г</a>
-								</div>
-								<div class="item__bottom">
 									<div class="item__cost">
 										<div class="item__number">
-											45,50
-											<span>55₽</span>
+											45,50 ₽
 										</div>
-										₽ / шт.
+
 									</div>
 									<div class="item__buttons">
+
+										<a href="#" class="item__card">
+											<div class="item__card-link"></div>
+										</a>
 										<div class="item__quantity">
 											<a href="#" class="item__quantity-minus">−</a>
 											<input class="item__quantity-input" type="text" name="quantity" value="1">
 											<a href="#" class="item__quantity-plus">+</a>
 										</div>
-										<a href="#" class="item__card">
-											<div class="item__card-link"></div>
-										</a>
 									</div>
 								</div>
 							</div>
-							<div class="main__content-item">
+							<div class="main__content-item mobile">
+								<div class="item__best"></div>
+								<div class="item__top">
+									<div class="item__image">
+										<span class="item__actia">Акция</span>
+										<span class="item__news">Новинка</span>
+
+										<a class="item__image-link" href="#">
+											<picture><source srcset="img/main/photo.webp" type="image/webp"><img class="" src="img/main/photo.png" alt=""></picture>
+										</a>
+									</div>
+								</div>
+
+								<div class="item__bottom">
+									<div class="item__title">
+										<a href="#">Напиток Мажитель NEO
+											0,05% персик-маракуйя 250г</a>
+									</div>
+									<div class="item__stars">
+										<div class="item__stars-bg">
+
+										</div>
+									</div>
+									<div class="item__cost">
+										<div class="item__number">
+											45,50 ₽
+										</div>
+
+									</div>
+									<div class="item__buttons">
+
+										<a href="#" class="item__card">
+											<div class="item__card-link"></div>
+										</a>
+										<div class="item__quantity">
+											<a href="#" class="item__quantity-minus">−</a>
+											<input class="item__quantity-input" type="text" name="quantity" value="1">
+											<a href="#" class="item__quantity-plus">+</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="main__content-item mobile">
+								<div class="item__best"></div>
+								<div class="item__top">
+									<div class="item__image">
+										<span class="item__actia">Акция</span>
+										<span class="item__news">Новинка</span>
+
+										<a class="item__image-link" href="#">
+											<picture><source srcset="img/main/photo.webp" type="image/webp"><img class="" src="img/main/photo.png" alt=""></picture>
+										</a>
+									</div>
+								</div>
+
+								<div class="item__bottom">
+									<div class="item__title">
+										<a href="#">Напиток Мажитель NEO
+											0,05% персик-маракуйя 250г</a>
+									</div>
+									<div class="item__stars">
+										<div class="item__stars-bg">
+
+										</div>
+									</div>
+									<div class="item__cost">
+										<div class="item__number">
+											45,50 ₽
+										</div>
+
+									</div>
+									<div class="item__buttons">
+
+										<a href="#" class="item__card">
+											<div class="item__card-link"></div>
+										</a>
+										<div class="item__quantity">
+											<a href="#" class="item__quantity-minus">−</a>
+											<input class="item__quantity-input" type="text" name="quantity" value="1">
+											<a href="#" class="item__quantity-plus">+</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="main__content-item mobile">
+								<div class="item__best"></div>
+								<div class="item__top">
+									<div class="item__image">
+										<span class="item__actia">Акция</span>
+										<span class="item__news">Новинка</span>
+
+										<a class="item__image-link" href="#">
+											<picture><source srcset="img/main/photo.webp" type="image/webp"><img class="" src="img/main/photo.png" alt=""></picture>
+										</a>
+									</div>
+								</div>
+
+								<div class="item__bottom">
+									<div class="item__title">
+										<a href="#">Напиток Мажитель NEO
+											0,05% персик-маракуйя 250г</a>
+									</div>
+									<div class="item__stars">
+										<div class="item__stars-bg">
+
+										</div>
+									</div>
+									<div class="item__cost">
+										<div class="item__number">
+											45,50 ₽
+										</div>
+
+									</div>
+									<div class="item__buttons">
+
+										<a href="#" class="item__card">
+											<div class="item__card-link"></div>
+										</a>
+										<div class="item__quantity">
+											<a href="#" class="item__quantity-minus">−</a>
+											<input class="item__quantity-input" type="text" name="quantity" value="1">
+											<a href="#" class="item__quantity-plus">+</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="main__content-item mobile">
+								<div class="item__best"></div>
+								<div class="item__top">
+									<div class="item__image">
+										<span class="item__actia">Акция</span>
+										<span class="item__news">Новинка</span>
+
+										<a class="item__image-link" href="#">
+											<picture><source srcset="img/main/photo.webp" type="image/webp"><img class="" src="img/main/photo.png" alt=""></picture>
+										</a>
+									</div>
+								</div>
+
+								<div class="item__bottom">
+									<div class="item__title">
+										<a href="#">Напиток Мажитель NEO
+											0,05% персик-маракуйя 250г</a>
+									</div>
+									<div class="item__stars">
+										<div class="item__stars-bg">
+
+										</div>
+									</div>
+									<div class="item__cost">
+										<div class="item__number">
+											45,50 ₽
+										</div>
+
+									</div>
+									<div class="item__buttons">
+
+										<a href="#" class="item__card">
+											<div class="item__card-link"></div>
+										</a>
+										<div class="item__quantity">
+											<a href="#" class="item__quantity-minus">−</a>
+											<input class="item__quantity-input" type="text" name="quantity" value="1">
+											<a href="#" class="item__quantity-plus">+</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="main__content-item second">
 								<div class="item__second-title">
 									<p>Нет товара<br>
 										который искали?</p>
@@ -374,7 +577,20 @@
 										и мы привезем!</p>
 								</div>
 								<div class="item__second-button">
-									<a href="#">Предложить товар</a>
+									<a href="#" data-popup="#popup__predlojenie">Предложить товар</a>
+								</div>
+							</div>
+							<div class="main__content-item second mobile ">
+								<div class="item__second-title">
+									<p>Нет товара<br>
+										который искали?</p>
+								</div>
+								<div class="item__second-text">
+									<p>Напишите нам <br>
+										и мы привезем!</p>
+								</div>
+								<div class="item__second-button">
+									<a href="#" data-popup="#popup__predlojenie">Предложить товар</a>
 								</div>
 							</div>
 						</div>
@@ -389,79 +605,86 @@
 		</footer>
 	</div>
 
-	<div id="popup__callback" aria-hidden="true" class="popup">
+	<div id="popup__filter" aria-hidden="true" class="popup popup__filter">
 		<div class="popup__wrapper">
 			<div class="popup__content">
 				<button data-close type="button" class="popup__close"></button>
 				<div class="popup__text">
-					<div class="popup__title main__right-title">
-						<h2>ОСТАВЬТЕ ЗАЯВКУ</h2>
-					</div>
-					<div class="popup__subtitle main__right-text">
-						<p>И наш специалист свяжется с Вами в ближайшее время</p>
-					</div>
 					<div class="popup__body">
-						<div class="popup__input main__right-form">
-							<p class="popup__subtitle main__right-subtitle">Номер телефона *</p>
-							<form id="callback" data-popup-message="#popup__message" data-dev action="" method=""
-								class="popup__form">
-								<input class="tel input _phone" required>
-								<button form="callback" type="submit"><span>Отправить</span></button>
-							</form>
-							<p class="popup__politics main__right-politics">
-								Нажимая кнопку, вы даете согласие на <a href="privacy.html" target="_blank">обработку
-									персональных
-									данных</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="popup__predlojenie" aria-hidden="true" class="popup popup__predlojenie">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__text">
+					<div class="popup__body">
+						<div class="popup__title filter__title">
+							Внесите данные
+						</div>
+						<div class="popup__item">
+							<p class="popup__text filter__text">
+								Название товара
 							</p>
+							<input type="text" class="filter__input">
 						</div>
+						<div class="popup__item">
+							<p class="popup__text filter__text">
+								Бренд товара
+							</p>
+							<input type="text" class="filter__input">
+						</div>
+						<div class="popup__item">
+							<p class="popup__text filter__text">
+								Имя
+							</p>
+							<input type="text" class="filter__input">
+						</div>
+						<div class="popup__item">
+							<p class="popup__text filter__text">
+								Телефон
+							</p>
+							<input type="text" class="filter__input">
+						</div>
+						<a href="#" data-popup="#popup__podtverdit" class="popup__button accept">Предложить товар</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
-
-	<div id="popup__tuya" aria-hidden="true" class="popup">
+	<div id="popup__podtverdit" aria-hidden="true" class="popup popup__podtverdit">
 		<div class="popup__wrapper">
 			<div class="popup__content">
-				<button data-close type="button" class="popup__close"></button>
 				<div class="popup__text">
-					<div class="popup__tuya-title">
-						Туя западная шарообразная
-					</div>
-					<div class="popup__tuya-body">
-						<div class="popup__tuya-left">
-							<p>высота</p>
-							<p>цена</p>
-							<p>количество ограничено</p>
+					<div class="popup__body">
+						<div class="popup__title filter__title">
+							Подтвердить действие
 						</div>
-						<div class="popup__tuya-right">
-							<p>от 1,2 до 1,5м</p>
-							<p>2 500 р за шт</p>
-							<p>360 шт</p>
-						</div>
+						<a href="#" data-popup="#popup__prinyato" class="popup__button accept">Подтвердить</a>
+						<a href="#" data-close class="popup__button sbros">Отклонить</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
-
-	<div id="popup__message" aria-hidden="true" class="popup">
+	<div id="popup__prinyato" aria-hidden="true" class="popup popup__prinyato">
 		<div class="popup__wrapper">
 			<div class="popup__content">
-				<button data-close type="button" class="popup__close"></button>
 				<div class="popup__text">
-					<div class="popup__title">Заявка отправлена!</div>
-					<div class="popup__subtitle">
-						В скором времени мы с вами свяжемся
+					<div class="popup__body">
+						<div class="popup__title filter__title">
+							Ваше предложение принято
+						</div>
+						<a href="#" data-close class="popup__button accept">Закрыть</a>
 					</div>
-
 				</div>
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20220913110232"></script>
+	<script src="js/app.min.js?_v=20220920140443"></script>
 </body>
 
 </html>

@@ -1,71 +1,78 @@
-<div id="popup__callback" aria-hidden="true" class="popup">
+<div id="popup__filter" aria-hidden="true" class="popup popup__filter">
 	<div class="popup__wrapper">
 		<div class="popup__content">
 			<button data-close type="button" class="popup__close"></button>
 			<div class="popup__text">
-				<div class="popup__title main__right-title">
-					<h2>ОСТАВЬТЕ ЗАЯВКУ</h2>
-				</div>
-				<div class="popup__subtitle main__right-text">
-					<p>И наш специалист свяжется с Вами в ближайшее время</p>
-				</div>
 				<div class="popup__body">
-					<div class="popup__input main__right-form">
-						<p class="popup__subtitle main__right-subtitle">Номер телефона *</p>
-						<form id="callback" data-popup-message="#popup__message" data-dev action="" method=""
-							class="popup__form">
-							<input class="tel input _phone" required>
-							<button form="callback" type="submit"><span>Отправить</span></button>
-						</form>
-						<p class="popup__politics main__right-politics">
-							Нажимая кнопку, вы даете согласие на <a href="privacy.html" target="_blank">обработку
-								персональных
-								данных</a>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="popup__predlojenie" aria-hidden="true" class="popup popup__predlojenie">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<div class="popup__text">
+				<div class="popup__body">
+					<div class="popup__title filter__title">
+						Внесите данные
+					</div>
+					<div class="popup__item">
+						<p class="popup__text filter__text">
+							Название товара
 						</p>
+						<input type="text" class="filter__input">
 					</div>
+					<div class="popup__item">
+						<p class="popup__text filter__text">
+							Бренд товара
+						</p>
+						<input type="text" class="filter__input">
+					</div>
+					<div class="popup__item">
+						<p class="popup__text filter__text">
+							Имя
+						</p>
+						<input type="text" class="filter__input">
+					</div>
+					<div class="popup__item">
+						<p class="popup__text filter__text">
+							Телефон
+						</p>
+						<input type="text" class="filter__input">
+					</div>
+					<a href="#" data-popup="#popup__podtverdit" class="popup__button accept">Предложить товар</a>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
-
-
-<div id="popup__tuya" aria-hidden="true" class="popup">
+<div id="popup__podtverdit" aria-hidden="true" class="popup popup__podtverdit">
 	<div class="popup__wrapper">
 		<div class="popup__content">
-			<button data-close type="button" class="popup__close"></button>
 			<div class="popup__text">
-				<div class="popup__tuya-title">
-					Туя западная шарообразная
-				</div>
-				<div class="popup__tuya-body">
-					<div class="popup__tuya-left">
-						<p>высота</p>
-						<p>цена</p>
-						<p>количество ограничено</p>
+				<div class="popup__body">
+					<div class="popup__title filter__title">
+						Подтвердить действие
 					</div>
-					<div class="popup__tuya-right">
-						<p>от 1,2 до 1,5м</p>
-						<p>2 500 р за шт</p>
-						<p>360 шт</p>
-					</div>
+					<a href="#" data-popup="#popup__prinyato" class="popup__button accept">Подтвердить</a>
+					<a href="#" data-close class="popup__button sbros">Отклонить</a>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
-
-
-<div id="popup__message" aria-hidden="true" class="popup">
+<div id="popup__prinyato" aria-hidden="true" class="popup popup__prinyato">
 	<div class="popup__wrapper">
 		<div class="popup__content">
-			<button data-close type="button" class="popup__close"></button>
 			<div class="popup__text">
-				<div class="popup__title">Заявка отправлена!</div>
-				<div class="popup__subtitle">
-					В скором времени мы с вами свяжемся
+				<div class="popup__body">
+					<div class="popup__title filter__title">
+						Ваше предложение принято
+					</div>
+					<a href="#" data-close class="popup__button accept">Закрыть</a>
 				</div>
-
 			</div>
 		</div>
 	</div>

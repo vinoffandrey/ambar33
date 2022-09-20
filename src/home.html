@@ -12,6 +12,62 @@
 				<div class="main__container">
 					<div class="main__content-left">
 						<h1>Левый сайдбар</h1>
+						<div class="main__content-filter" data-da=".popup__body,30,1">
+							<div class="filter__title">
+								Фильтры
+							</div>
+							<div class="filter__item">
+								<p class="filter__text">
+									Цена
+								</p>
+								<div class="filter__box">
+									<div class="filter__box-price">
+										<input id="min-price" name="min_price" value="100">
+										<span></span>
+										<input id="max-price" name="max_price" value="300">
+									</div>
+									<div class="price__range" id="range" max="28420000" min="6130000">
+										<span class="bar"></span>
+										<span class="min"></span>
+										<span class="max"></span>
+									</div>
+								</div>
+							</div>
+							<div class="filter__item">
+								<p class="filter__text">
+									Бренд
+								</p>
+								<div class="filter__box" data-spollers>
+									<input type="text" class="filter__input" placeholder="Не выбрано">
+									<div class="filter__arrow" data-spoller></div>
+									<ul class="filter__dropdown">
+										<li>Бренд 1</li>
+										<li>Бренд 2</li>
+										<li>Бренд 3</li>
+										<li>Бренд 4</li>
+									</ul>
+								</div>
+							</div>
+							<div class="filter__item">
+								<p class="filter__text">
+									Жирность
+								</p>
+								<div class="filter__box" data-spollers>
+									<input type="text" class="filter__input" placeholder="Не выбрано">
+									<div class="filter__arrow" data-spoller></div>
+									<ul class="filter__dropdown">
+										<li>Жирность 1</li>
+										<li>Жирность 2</li>
+										<li>Жирность 3</li>
+										<li>Жирность 4</li>
+									</ul>
+								</div>
+							</div>
+							<div class="filter__item button">
+								<a class="filter__button accept" href="">Применить</a>
+								<a class="filter__button sbros" href="">Сбросить</a>
+							</div>
+						</div>
 					</div>
 					<div class="main__content-right">
 						<div class="main__content-title">
@@ -23,7 +79,7 @@
 								<li><a href="#">Молочные продукты, сыры, як...</a></li>
 								<li><a href="#">Молоко и молочные коктейли</a></li>
 							</ul>
-							<a href="" class="filters__link">Фильтр по параметрам</a>
+							<a href="#" data-popup="#popup__filter" class="filters__link">Фильтр по параметрам</a>
 							<div class="main__content-filters">
 								<p class="filters__text">Сортировать</p>
 								<ul class="filters__list">
@@ -508,7 +564,7 @@
 										и мы привезем!</p>
 								</div>
 								<div class="item__second-button">
-									<a href="#">Предложить товар</a>
+									<a href="#" data-popup="#popup__predlojenie">Предложить товар</a>
 								</div>
 							</div>
 							<div class="main__content-item second mobile ">
@@ -521,7 +577,7 @@
 										и мы привезем!</p>
 								</div>
 								<div class="item__second-button">
-									<a href="#">Предложить товар</a>
+									<a href="#" data-popup="#popup__predlojenie">Предложить товар</a>
 								</div>
 							</div>
 						</div>
