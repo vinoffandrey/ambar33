@@ -611,6 +611,7 @@
 		color: #2C2D2E;
 		width: inherit;
 		text-align: center;
+		outline: none;
 		@media(max-width: $mobileSmall) {
 			color: #7B7B7B;
 		 }
@@ -824,6 +825,7 @@
 			flex: 0 1 87px;
 			max-width: 87px;
 			text-align: center;
+			outline: none;
 			@media(max-width: $mobileSmall) {
 				flex: 1 1 120px;
 				max-width: 140px;
@@ -847,6 +849,7 @@
 		font-weight: 400;
 		font-size: 13px;
 		line-height: 160%;
+		outline: none;
 	}
 
 	&__arrow {
