@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Как сделать заказ"
+})
+
+<body style="overflow-x: hidden;">
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<section class="zakaz__section">
+				<div class="zakaz__container">
+					<div class="zakaz__title">
+						<h1>Как сделать заказ</h1>
+					</div>
+					<div class="zakaz__top-text">
+						<p>Пошаговая инструкция оформления заказа находится в видео и под видео в текстовом формате.</p>
+					</div>
+					<video src="img/main/video.mp4" class="zakaz__video">
+						<source src="img/main/video.mp4" type="video/mp4">
+					</video>
+					<div class="zakaz__body">
+						<div class="zakaz__left">
+							<div class="zakaz__left-title">
+								Для физических лиц
+							</div>
+							<ol>
+								<li>
+									<p>Пройдите авторизацию
+										по номеру телефона</p>
+								</li>
+								<li>
+									<p>Выберете товары
+										в каталоге</p>
+								</li>
+								<li>
+									<p>Зайдите в корзину, проверьте товары
+										и нажмите кнопку "Оформить заказ"</p>
+								</li>
+								<li>
+									<p>Заполните необходимые поля (Поля под звездочкой обязательны к заполнению)</p>
+								</li>
+								<li>
+									<p>Проверьте список товаров
+										и их количество перед отправкой</p>
+								</li>
+								<li>
+									<p>Нажмите кнопку
+										"Отправить"</p>
+								</li>
+								<li>
+									<p>Вам на телефон придёт смс
+										с подтверждением заказа</p>
+								</li>
+							</ol>
+						</div>
+						<div class="zakaz__right">
+							<div class="zakaz__left-title">
+								Для юридических лиц
+							</div>
+							<p class="zakaz__right-text">На сайте реализована функция заказа по оптовым ценам для организаций,
+								торговых точек, магазинов,
+								кафе и ресторанов. Если вы впервые делаете заказ на сайте как юридическое лицо - следуйте
+								инструкции:</p>
+							<ol>
+								<li>
+									<p>Свяжитесь с оператором по телефону 8 (800) 775-13-16 с 8.00 до 17.00 и вышлете реквизиты
+										вашей организации на почту vla-sadov2012@yandex.ru</p>
+								</li>
+								<li>
+									<p>Оператор сообщит индивидуальный логин
+										и пароль для входа на сайт как юридическому лицу</p>
+								</li>
+								<li>
+									<p>При авторизации на сайте как юридическое лицо, на все товары указаны оптовые цены</p>
+								</li>
+							</ol>
+							<div class="zakaz__text">
+								* Заявки на сайте принимаем 24/7. Вы можете оставлять заявки в любое удобное время
+							</div>
+						</div>
+					</div>
+					<div class="zakaz__bottom">
+						<p class="zakaz__bottom-text">За более подробной информацией обращайтесь по телефону компании</p>
+						<a href="tel:+78007751316" class="zakaz__bottom-mobile">8 (800) 775-13-16</a>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

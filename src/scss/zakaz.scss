@@ -1,0 +1,227 @@
+.zakaz {
+
+	&__section {
+	}
+
+	&__container {
+		margin-bottom: 95px;
+		@media(max-width: $mobileSmall) {
+			margin-bottom: 163px;
+		}
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 40px;
+		line-height: 110%;
+		color: #2C2D2E;
+		margin-top: 46px;
+		@media(max-width: $mobileSmall) {
+			font-size: 25px;
+			line-height: 30px;
+		}
+		@media(max-width: $mobileSmall) {
+			font-size: 25px;
+			line-height: 30px;
+		}
+	}
+
+	&__top-text {
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 160%;
+		color: #2C2D2E;
+		margin-top: 16px;
+		margin-bottom: 32px;
+		max-width: 364px;
+		@media(max-width: $mobileSmall) {
+			margin-bottom: 48px;
+			max-width: 265px;
+		}
+	}
+
+	&__text {
+		font-weight: 400;
+		font-size: 11px;
+		line-height: 150%;
+		color: #7B7B7B;
+		margin-top: 32px;
+		max-width: 380px;
+	}
+
+	&__video {
+		width: 100%;
+		@media(max-width: $mobileSmall) {
+			background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../img/main/background.png');
+			border: 1px solid #E4E4E4;
+			border-radius: 14px;
+		}
+	}
+
+	&__body {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 64px;
+		@media(max-width: $mobile) {
+			flex-wrap: wrap;
+		}
+		@media(max-width: $mobileSmall) {
+			margin-top: 48px;
+		}
+	}
+
+	&__left {
+		flex: 0 0 300px;
+		margin-right: 50px;
+		@media(max-width: $mobile) {
+			flex: 1 1 100%;
+			margin-right: 0;
+			margin-bottom: 30px;
+		}
+		@media(max-width: $mobileSmall) {
+			margin-bottom: 48px;
+		}
+		ol {
+			margin-top: 32px;
+			li {
+				font-weight: 400;
+				font-size: 11px;
+				line-height: 150%;
+				color: #2C2D2E;
+				position: relative;
+				list-style-type:none;
+				counter-increment: list;
+				display: flex;
+				align-items: center;
+				&::before {
+					content: counter(list) " ";
+					font-weight: 600;
+					font-size: 25px;
+					line-height: 30px;
+					text-align: center;
+					color: #2C2D2E;
+					width: 30px;
+					min-width: 30px;
+					text-align: center;
+				}
+				p {
+					margin-left: 16px;
+					@media(max-width: $mobileSmall) {
+						margin-left: 12px;
+					}
+				}
+				&:not(:last-child) {
+					margin-bottom: 16px;
+				}
+			}
+		}
+	}
+
+	&__right {
+		flex: 0 1 650px;
+		@media(max-width: $mobile) {
+			flex: 1 1 100%;
+		}
+		&-text {
+			margin-top: 16px;
+			font-weight: 400;
+			font-size: 13px;
+			line-height: 160%;
+			color: #2C2D2E;
+			max-width: 380px;
+			@media(max-width: $mobile) {
+				max-width: 100%;
+			}
+		}
+		ol {
+			margin-top: 32px;
+			max-width: 380px;
+			@media(max-width: $mobile) {
+				max-width: 100%;
+			}
+			li {
+				font-weight: 400;
+				font-size: 11px;
+				line-height: 150%;
+				color: #2C2D2E;
+				position: relative;
+				list-style-type:none;
+				counter-increment: list;
+				display: flex;
+				align-items: center;
+				&::before {
+					content: counter(list) " ";
+					font-weight: 600;
+					font-size: 25px;
+					line-height: 30px;
+					text-align: center;
+					color: #2C2D2E;
+					width: 30px;
+					min-width: 30px;
+				}
+				p {
+					margin-left: 16px;
+					@media(max-width: $mobileSmall) {
+						margin-left: 12px;
+					}
+				}
+				&:not(:last-child) {
+					margin-bottom: 16px;
+				}
+			}
+		}
+	}
+
+	&__left-title {
+		font-weight: 600;
+		font-size: 25px;
+		line-height: 30px;
+		color: #2C2D2E;
+		@media(max-width: $mobileSmall) {
+			font-size: 18px;
+			line-height: 110%;
+		}
+	}
+
+	&__bottom {
+		margin-top: 80px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		@media(max-width: $mobileSmall) {
+			border: 1px solid #E4E4E4;
+			border-radius: 14px;
+			padding: 44px 41px;
+			margin-top: 48px;
+		}
+	}
+
+	&__bottom-text {
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 160%;
+		color: #2C2D2E;
+		@media(max-width: $mobileSmall) {
+			text-align: center;
+		}
+	}
+
+	&__bottom-mobile {
+		font-weight: 600;
+		font-size: 25px;
+		line-height: 30px;
+		color: #F4831B;
+		margin-top: 8px;
+		@media(max-width: $mobileSmall) {
+			margin-top: 16px;
+			font-size: 18px;
+			line-height: 110%;
+		}
+	}
+}
+.kazak {
+
+	&__left-title {
+	}
+}
