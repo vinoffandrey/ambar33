@@ -559,11 +559,6 @@ body.popup-show::after {
   position: relative;
   text-align: right;
 }
-@media (max-width: 29.99875em) {
-  .main__content-filters p {
-    font-weight: 600;
-  }
-}
 .main__content-filters p:after {
   position: absolute;
   right: 110px;
@@ -571,7 +566,7 @@ body.popup-show::after {
   content: "";
   width: 19px;
   height: 19px;
-  background-image: url("../img/main/Filter.png");
+  background-image: url("../img/main/filter.png");
   background-size: contain;
   background-position: right;
   background-repeat: no-repeat;
@@ -579,6 +574,11 @@ body.popup-show::after {
 @media (max-width: 29.99875em) {
   .main__content-filters p:after {
     right: 95px;
+  }
+}
+@media (max-width: 29.99875em) {
+  .main__content-filters p {
+    font-weight: 600;
   }
 }
 .main__content-filters ul {

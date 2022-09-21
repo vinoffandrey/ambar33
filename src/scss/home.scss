@@ -85,9 +85,6 @@
 			color: #2C2D2E;
 			position: relative;
 			text-align: right;
-			@media(max-width: $mobileSmall) {
-				font-weight: 600;
-			}
 			&:after {
 				position: absolute;
 				right: 110px;
@@ -95,13 +92,16 @@
 				content: "";
 				width: 19px;
 				height: 19px;
-				background-image: url('../img/main/Filter.png');
+				background-image: url('../img/main/filter.png');
 				background-size: contain;
 				background-position: right;
 				background-repeat: no-repeat;
 				@media(max-width: $mobileSmall) {
 					right: 95px;
 				}
+			}
+			@media(max-width: $mobileSmall) {
+				font-weight: 600;
 			}
 		}
 		ul {
