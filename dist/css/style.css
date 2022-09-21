@@ -1702,7 +1702,6 @@ body.popup-show::after {
   line-height: 150%;
   color: #7B7B7B;
   margin-top: 32px;
-  max-width: 380px;
 }
 .zakaz__video {
   width: 100%;
@@ -1721,6 +1720,7 @@ body.popup-show::after {
   display: flex;
   justify-content: space-between;
   margin-top: 64px;
+  flex-wrap: wrap;
 }
 @media (max-width: 47.99875em) {
   .zakaz__body {
@@ -1733,7 +1733,7 @@ body.popup-show::after {
   }
 }
 .zakaz__left {
-  flex: 0 0 300px;
+  flex: 1 1 100%;
   margin-right: 50px;
 }
 @media (max-width: 47.99875em) {
@@ -1785,11 +1785,18 @@ body.popup-show::after {
   margin-bottom: 16px;
 }
 .zakaz__right {
-  flex: 0 1 650px;
+  flex: 1 1 100%;
+  margin-top: 64px;
 }
 @media (max-width: 47.99875em) {
   .zakaz__right {
     flex: 1 1 100%;
+    margin-top: 32px;
+  }
+}
+@media (max-width: 29.99875em) {
+  .zakaz__right {
+    margin-top: 0;
   }
 }
 .zakaz__right-text {
@@ -1798,7 +1805,7 @@ body.popup-show::after {
   font-size: 13px;
   line-height: 160%;
   color: #2C2D2E;
-  max-width: 380px;
+  max-width: 800px;
 }
 @media (max-width: 47.99875em) {
   .zakaz__right-text {
@@ -1807,7 +1814,6 @@ body.popup-show::after {
 }
 .zakaz__right ol {
   margin-top: 32px;
-  max-width: 380px;
 }
 @media (max-width: 47.99875em) {
   .zakaz__right ol {
