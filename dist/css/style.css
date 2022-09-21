@@ -1,23 +1,23 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "Kelson";
+  font-family: "Montserrat";
   font-display: swap;
-  src: url("../fonts/KelsonSansBold.woff2") format("woff2"), url("../fonts/KelsonSansBold.woff") format("woff");
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
-  font-family: "Kelson";
+  font-family: "Montserrat";
   font-display: swap;
-  src: url("../fonts/KelsonSansLight.woff2") format("woff2"), url("../fonts/KelsonSansLight.woff") format("woff");
-  font-weight: 300;
+  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff");
+  font-weight: 600;
   font-style: normal;
 }
 @font-face {
-  font-family: "Kelson";
+  font-family: "Montserrat";
   font-display: swap;
-  src: url("../fonts/KelsonSansRegular.woff2") format("woff2"), url("../fonts/KelsonSansRegular.woff") format("woff");
-  font-weight: 400;
+  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
+  font-weight: 500;
   font-style: normal;
 }
 @font-face {
@@ -1698,7 +1698,7 @@ body.popup-show::after {
 }
 .zakaz__text {
   font-weight: 400;
-  font-size: 11px;
+  font-size: 13px;
   line-height: 150%;
   color: #7B7B7B;
   margin-top: 32px;
@@ -1753,7 +1753,7 @@ body.popup-show::after {
 }
 .zakaz__left ol li {
   font-weight: 400;
-  font-size: 11px;
+  font-size: 13px;
   line-height: 150%;
   color: #2C2D2E;
   position: relative;
@@ -1816,7 +1816,7 @@ body.popup-show::after {
 }
 .zakaz__right ol li {
   font-weight: 400;
-  font-size: 11px;
+  font-size: 13px;
   line-height: 150%;
   color: #2C2D2E;
   position: relative;
