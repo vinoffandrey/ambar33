@@ -447,6 +447,11 @@
 	.main__content-item.mobile {
 		margin-bottom: 15px;
 		position: relative;
+		@media (any-hover: hover){
+			&:hover{
+				box-shadow: none!important; 
+			} 
+		}
 	}
 	.item__best {
 		&::after {
@@ -470,7 +475,7 @@
 			}
 			@media (any-hover: hover){
 				&:hover{
-					 transform: none;
+					 transform: none!important;
 				} 
 			}
 		}

@@ -2469,6 +2469,11 @@ body.popup-show::after {
   margin-bottom: 15px;
   position: relative;
 }
+@media (any-hover: hover) {
+  .main__content-wrapper .main__content-item.mobile:hover {
+    box-shadow: none !important;
+  }
+}
 .main__content-wrapper .item__best::after {
   display: none;
 }
@@ -2491,7 +2496,7 @@ body.popup-show::after {
 }
 @media (max-width: 47.99875em) and (any-hover: hover) {
   .main__content-wrapper .close:hover {
-    transform: none;
+    transform: none !important;
   }
 }
 .main__content-wrapper .item__best {
