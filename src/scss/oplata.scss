@@ -1,0 +1,188 @@
+.oplata {
+
+	&__section {
+		margin-top: 46px;
+		margin-bottom: 122px;
+		@media(max-width: $mobile) {
+			margin-bottom: 88px;
+		}
+	}
+
+	&__container {
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 40px;
+		line-height: 110%;
+		color: #2C2D2E;
+		@media(max-width: $mobileSmall) {
+			font-size: 25px;
+			line-height: 30px;
+		}
+	}
+
+	&__body {
+		margin-top: 32px;
+		display: flex;
+		gap: 20px;
+		@media(max-width: $tablet) {
+			flex-wrap: wrap;
+		}
+		@media(max-width: $mobileSmall) {
+			margin-top: 48px;
+			gap: 40px;
+		}
+	}
+
+	&__left {
+		flex: 1 1 33.333%;
+		@media(max-width: $mobileSmall) {
+			flex: 1 1 100%;
+		}
+	}
+
+	&__left-image {
+		img {
+			border-radius: 14px;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+	&__left-body {
+	}
+
+	&__left-picture {
+		position: relative;
+		width: 24px;
+		height: 24px;
+		margin-top: 16px;
+		margin-bottom: 8px;
+		&::before {
+			position: absolute;
+			content: "";
+			top: 0;
+			left: 0;
+			width: 24px;
+			height: 24px;
+			background-image: url('../img/main/oplata_icon_1.png');
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+		@media(max-width: $mobileSmall) {
+			margin-top: 20px;
+		}
+	}
+
+	&__left-title {
+	}
+
+	&__left-text {
+		max-width: 350px;
+	}
+	&__body-title {
+		font-weight: 600;
+		font-size: 13px;
+		line-height: 120%;
+		color: #2C2D2E;
+		margin-bottom: 16px;
+		@media(max-width: $mobileSmall) {
+			font-size: 18px;
+			line-height: 110%;
+		}
+	}
+	&__text {
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 160%;
+		color: #2C2D2E;
+	}
+
+	&__center {
+		flex: 1 1 33.333%;
+		@media(max-width: $mobileSmall) {
+			flex: 1 1 100%;
+		}
+	}
+
+	&__center-image {
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+	&__center-body {
+	}
+
+	&__center-picture {
+		position: relative;
+		width: 24px;
+		height: 24px;
+		margin-top: 16px;
+		margin-bottom: 8px;
+		&::before {
+			position: absolute;
+			content: "";
+			top: 0;
+			left: 0;
+			width: 24px;
+			height: 24px;
+			background-image: url('../img/main/oplata_icon_2.png');
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+	}
+
+	&__center-title {
+	}
+
+	&__center-text {
+		max-width: 370px;
+	}
+
+	&__right {
+		border: 1px solid #E4E4E4;
+		border-radius: 14px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		flex: 1 1 33.333%;
+		padding: 10px;
+		@media(max-width: $tablet) {
+			border: none;
+		}
+		@media(max-width: $mobileSmall) {
+			border: 1px solid #E4E4E4;
+			padding: 44px 10px;
+		}
+	}
+
+	&__right-text {
+		max-width: 265px;
+		text-align: center;
+		color: #000000;
+	}
+
+	&__right-number {
+		text-align: center;
+		font-weight: 600;
+		font-size: 25px;
+		line-height: 30px;
+		color: #F4831B;
+		margin-top: 16px;
+		@media(max-width: $mobileSmall) {
+			font-size: 18px;
+		}
+	}
+
+	&__bottom {
+		margin-top: 64px;
+		font-weight: 400;
+		font-size: 11px;
+		line-height: 150%;
+		color: #E4E4E4;
+	}
+}

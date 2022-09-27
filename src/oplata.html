@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Как сделать заказ"
+})
+
+<body style="overflow-x: hidden;">
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<section class="oplata__section">
+				<div class="oplata__container">
+					<div class="oplata__title">
+						<h1>Оплата</h1>
+					</div>
+					<div class="oplata__body">
+						<div class="oplata__left">
+							<div class="oplata__left-image">
+								<img src="img/main/oplata_1.png" alt="">
+							</div>
+							<div class="oplata__left-body">
+								<div class="oplata__left-picture">
+								</div>
+								<div class="oplata__left-title oplata__body-title">
+									Наличный расчёт
+								</div>
+								<div class="oplata__left-text oplata__text">
+									Оплата производится наличными курьеру при доставке заказа или в магазине при самовывозе по
+									адресу г. Ковров, ул. 1-ая Большая, д. 15.
+								</div>
+							</div>
+						</div>
+						<div class="oplata__center">
+							<div class="oplata__center-image">
+								<img src="img/main/oplata_2.png" alt="">
+							</div>
+							<div class="oplata__center-body">
+								<div class="oplata__center-picture">
+								</div>
+								<div class="oplata__center-title oplata__body-title">
+									Банковской картой
+								</div>
+								<div class="oplata__center-text oplata__text">
+									Оплата производится банковской картой при получении (у курьера есть мини-терминал с собой)
+									или онлайн-платежом на сайте Амбара при оформлении заказа. Для оплаты принимаем банковские
+									карты Visa, Visa Electron, MasterCard, MasterCard Electronic, MasterCard Maestro.
+								</div>
+							</div>
+						</div>
+						<div class="oplata__right">
+							<div class="oplata__right-text oplata__text">
+								За более подробной информацией обращайтесь по телефону компании
+							</div>
+							<div class="oplata__right-number">
+								<a href="tel:+78007751316">8 (800) 775-13-16</a>
+							</div>
+						</div>
+					</div>
+					<div class="oplata__bottom">
+						<p>Настоящий сайт поддерживает 256-битное шифрование. Конфиденциальность сообщаемой персональной
+							информации обеспечивает ПАО Сбербанк. Введенная информация не будет предоставленна третьим лицам за
+							исключением случаев, предусмотренных законодательством РФ. Проведение платежей по банковским картам
+							осужествляется в строгом соответствии с требованиями платежных систем Visa Int. и MasterCard Europe
+							Sprl. В случае если Ваш банк поддерживает технологию безопасного проведения интернет-платежей
+							Verified By Visa или MasterCard Secure Code, для проведения платежа также может потребоваться ввод
+							специального пароля. Способы и возможность получения паролей для совершения интернет-платежей Вы
+							можете уточнить в банке, выпустившем карту.</p>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>
