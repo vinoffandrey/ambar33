@@ -28,24 +28,28 @@
 
 	&__top-text {
 		font-weight: 400;
-		font-size: 13px;
+		font-size: 16px;
 		line-height: 160%;
 		color: #2C2D2E;
 		margin-top: 16px;
 		margin-bottom: 32px;
-		max-width: 364px;
+		max-width: 480px;
 		@media(max-width: $mobileSmall) {
 			margin-bottom: 48px;
+			font-size: 13px;
 			max-width: 265px;
 		}
 	}
 
 	&__text {
 		font-weight: 400;
-		font-size: 13px;
+		font-size: 16px;
 		line-height: 150%;
 		color: #7B7B7B;
 		margin-top: 32px;
+		@media(max-width: $mobileSmall) {
+			font-size: 13px;
+		}
 	}
 
 	&__video {
@@ -88,7 +92,7 @@
 			margin-top: 32px;
 			li {
 				font-weight: 400;
-				font-size: 13px;
+				font-size: 16px;
 				line-height: 150%;
 				color: #2C2D2E;
 				position: relative;
@@ -106,6 +110,9 @@
 					width: 30px;
 					min-width: 30px;
 					text-align: center;
+				}
+				@media(max-width: $mobileSmall) {
+					font-size: 13px;
 				}
 				p {
 					margin-left: 16px;
@@ -133,12 +140,15 @@
 		&-text {
 			margin-top: 16px;
 			font-weight: 400;
-			font-size: 13px;
+			font-size: 16px;
 			line-height: 160%;
 			color: #2C2D2E;
-			max-width: 800px;
+			max-width: 1000px;
 			@media(max-width: $mobile) {
 				max-width: 100%;
+			}
+			@media(max-width: $mobileSmall) {
+				font-size: 13px;
 			}
 		}
 		ol {
@@ -148,7 +158,7 @@
 			}
 			li {
 				font-weight: 400;
-				font-size: 13px;
+				font-size: 16px;
 				line-height: 150%;
 				color: #2C2D2E;
 				position: relative;
@@ -165,6 +175,9 @@
 					color: #2C2D2E;
 					width: 30px;
 					min-width: 30px;
+				}
+				@media(max-width: $mobileSmall) {
+					font-size: 13px;
 				}
 				p {
 					margin-left: 16px;
@@ -206,11 +219,12 @@
 
 	&__bottom-text {
 		font-weight: 400;
-		font-size: 13px;
+		font-size: 16px;
 		line-height: 160%;
 		color: #2C2D2E;
 		@media(max-width: $mobileSmall) {
 			text-align: center;
+			font-size: 13px;
 		}
 	}
 

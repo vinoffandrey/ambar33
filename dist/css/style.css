@@ -1683,25 +1683,31 @@ body.popup-show::after {
 }
 .zakaz__top-text {
   font-weight: 400;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 160%;
   color: #2C2D2E;
   margin-top: 16px;
   margin-bottom: 32px;
-  max-width: 364px;
+  max-width: 480px;
 }
 @media (max-width: 29.99875em) {
   .zakaz__top-text {
     margin-bottom: 48px;
+    font-size: 13px;
     max-width: 265px;
   }
 }
 .zakaz__text {
   font-weight: 400;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 150%;
   color: #7B7B7B;
   margin-top: 32px;
+}
+@media (max-width: 29.99875em) {
+  .zakaz__text {
+    font-size: 13px;
+  }
 }
 .zakaz__video {
   width: 100%;
@@ -1753,7 +1759,7 @@ body.popup-show::after {
 }
 .zakaz__left ol li {
   font-weight: 400;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 150%;
   color: #2C2D2E;
   position: relative;
@@ -1772,6 +1778,11 @@ body.popup-show::after {
   width: 30px;
   min-width: 30px;
   text-align: center;
+}
+@media (max-width: 29.99875em) {
+  .zakaz__left ol li {
+    font-size: 13px;
+  }
 }
 .zakaz__left ol li p {
   margin-left: 16px;
@@ -1802,14 +1813,19 @@ body.popup-show::after {
 .zakaz__right-text {
   margin-top: 16px;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 160%;
   color: #2C2D2E;
-  max-width: 800px;
+  max-width: 1000px;
 }
 @media (max-width: 47.99875em) {
   .zakaz__right-text {
     max-width: 100%;
+  }
+}
+@media (max-width: 29.99875em) {
+  .zakaz__right-text {
+    font-size: 13px;
   }
 }
 .zakaz__right ol {
@@ -1822,7 +1838,7 @@ body.popup-show::after {
 }
 .zakaz__right ol li {
   font-weight: 400;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 150%;
   color: #2C2D2E;
   position: relative;
@@ -1840,6 +1856,11 @@ body.popup-show::after {
   color: #2C2D2E;
   width: 30px;
   min-width: 30px;
+}
+@media (max-width: 29.99875em) {
+  .zakaz__right ol li {
+    font-size: 13px;
+  }
 }
 .zakaz__right ol li p {
   margin-left: 16px;
@@ -1881,13 +1902,14 @@ body.popup-show::after {
 }
 .zakaz__bottom-text {
   font-weight: 400;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 160%;
   color: #2C2D2E;
 }
 @media (max-width: 29.99875em) {
   .zakaz__bottom-text {
     text-align: center;
+    font-size: 13px;
   }
 }
 .zakaz__bottom-mobile {
@@ -1940,7 +1962,7 @@ body.popup-show::after {
 }
 .vozvrat__left ul li {
   font-weight: 400;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 150%;
   color: #2C2D2E;
   list-style-type: disc;
@@ -1958,7 +1980,7 @@ body.popup-show::after {
 }
 .vozvrat__left p {
   font-weight: 400;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 150%;
   color: #2C2D2E;
   margin-top: 12px;
@@ -1983,7 +2005,7 @@ body.popup-show::after {
 }
 .vozvrat__top-text {
   font-weight: 400;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 160%;
   color: #2C2D2E;
   margin-top: 16px;
@@ -1996,7 +2018,7 @@ body.popup-show::after {
 }
 .vozvrat__left-title {
   font-weight: 600;
-  font-size: 14px;
+  font-size: 17px;
   line-height: 120%;
   color: #2C2D2E;
 }
@@ -2007,7 +2029,7 @@ body.popup-show::after {
 }
 .vozvrat__left-title p {
   font-weight: 600;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 120%;
   color: #2C2D2E;
   color: #F4831B;
