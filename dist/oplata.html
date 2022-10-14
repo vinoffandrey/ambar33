@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Как сделать заказ</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.7/swiper-bundle.min.css?_v=20221014140417" integrity="sha512-xdNgqS9I7CHbzFYjDiySh1lV5Sc4sobLLAvHLqtZY6ynlCiWpl+eGPds9CAMFFst5QgZRgd92qfeg03sl3UCjA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20221014140417">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body style="overflow-x: hidden;">
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<h1>Шапка сайта</h1>
+				<a href="home.html">Главная страница</a>
+				<a href="reviews.html">Страница отзывов</a>
+				<a href="zakaz.html">Как сделать заказ</a>
+				<a href="vozvrat.html">Возврат</a>
+				<a href="card.html">Корзина</a>
+				<a href="oplata.html">Оплата</a>
+				<a href="enter.html">Страница входа</a>
+				<a href="profile.html">Профиль</a>
+			</div>
+		</header>
+		<main class="page">
+			<section class="oplata__section">
+				<div class="oplata__container">
+					<div class="oplata__title">
+						<h1>Оплата</h1>
+					</div>
+					<div class="oplata__body">
+						<div class="oplata__left">
+							<div class="oplata__left-image">
+								<picture><source srcset="img/main/oplata_1.webp" type="image/webp"><img src="img/main/oplata_1.png" alt=""></picture>
+							</div>
+							<div class="oplata__left-body">
+								<div class="oplata__left-picture">
+								</div>
+								<div class="oplata__left-title oplata__body-title">
+									Наличный расчёт
+								</div>
+								<div class="oplata__left-text oplata__text">
+									Оплата производится наличными курьеру при доставке заказа или в магазине при самовывозе по
+									адресу г. Ковров, ул. 1-ая Большая, д. 15.
+								</div>
+							</div>
+						</div>
+						<div class="oplata__center">
+							<div class="oplata__center-image">
+								<picture><source srcset="img/main/oplata_2.webp" type="image/webp"><img src="img/main/oplata_2.png" alt=""></picture>
+							</div>
+							<div class="oplata__center-body">
+								<div class="oplata__center-picture">
+								</div>
+								<div class="oplata__center-title oplata__body-title">
+									Банковской картой
+								</div>
+								<div class="oplata__center-text oplata__text">
+									Оплата производится банковской картой при получении (у курьера есть мини-терминал с собой)
+									или онлайн-платежом на сайте Амбара при оформлении заказа. Для оплаты принимаем банковские
+									карты Visa, Visa Electron, MasterCard, MasterCard Electronic, MasterCard Maestro.
+								</div>
+							</div>
+						</div>
+						<div class="oplata__right">
+							<div class="oplata__right-text oplata__text">
+								За более подробной информацией обращайтесь по телефону компании
+							</div>
+							<div class="oplata__right-number">
+								<a href="tel:+78007751316">8 (800) 775-13-16</a>
+							</div>
+						</div>
+					</div>
+					<div class="oplata__bottom">
+						<p>Настоящий сайт поддерживает 256-битное шифрование. Конфиденциальность сообщаемой персональной
+							информации обеспечивает ПАО Сбербанк. Введенная информация не будет предоставленна третьим лицам за
+							исключением случаев, предусмотренных законодательством РФ. Проведение платежей по банковским картам
+							осужествляется в строгом соответствии с требованиями платежных систем Visa Int. и MasterCard Europe
+							Sprl. В случае если Ваш банк поддерживает технологию безопасного проведения интернет-платежей
+							Verified By Visa или MasterCard Secure Code, для проведения платежа также может потребоваться ввод
+							специального пароля. Способы и возможность получения паролей для совершения интернет-платежей Вы
+							можете уточнить в банке, выпустившем карту.</p>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+
+			</div>
+		</footer>
+	</div>
+
+	<div id="popup__filter" aria-hidden="true" class="popup popup__filter">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup__text">
+					<div class="popup__body">
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="popup__predlojenie" aria-hidden="true" class="popup popup__predlojenie">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__text">
+					<div class="popup__body">
+						<div class="popup__title filter__title">
+							Внесите данные
+						</div>
+						<div class="popup__item">
+							<p class="popup__text filter__text">
+								Название товара
+							</p>
+							<input type="text" class="filter__input">
+						</div>
+						<div class="popup__item">
+							<p class="popup__text filter__text">
+								Бренд товара
+							</p>
+							<input type="text" class="filter__input">
+						</div>
+						<div class="popup__item">
+							<p class="popup__text filter__text">
+								Имя
+							</p>
+							<input type="text" class="filter__input">
+						</div>
+						<div class="popup__item">
+							<p class="popup__text filter__text">
+								Телефон
+							</p>
+							<input type="text" class="filter__input">
+						</div>
+						<a href="#" data-popup="#popup__podtverdit" class="popup__button accept">Предложить товар</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="popup__podtverdit" aria-hidden="true" class="popup popup__podtverdit">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__text">
+					<div class="popup__body">
+						<div class="popup__title filter__title">
+							Подтвердить действие
+						</div>
+						<a href="#" data-popup="#popup__prinyato" class="popup__button accept">Подтвердить</a>
+						<a href="#" data-close class="popup__button sbros">Отклонить</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="popup__prinyato" aria-hidden="true" class="popup popup__prinyato">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__text">
+					<div class="popup__body">
+						<div class="popup__title filter__title">
+							Ваше предложение принято
+						</div>
+						<a href="#" data-close class="popup__button accept">Закрыть</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20221014140417"></script>
+</body>
+
+</html>
