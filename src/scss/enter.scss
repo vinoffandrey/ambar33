@@ -1,0 +1,148 @@
+.enter {
+
+	&__section {
+		font-size: 15px;
+		font-weight: 400;
+		line-height: 24px;
+		font-family: PTSans, sans-serif;
+		background-color: #f1f2f3;
+		color: #1b2a30;
+		height: 100%;
+	}
+
+	&__container {
+	}
+
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		gap: 10px;
+		align-items: flex-start;
+		max-width: 440px;
+		padding-top: 20px;
+		margin: 0 auto 40px auto;
+		@media(max-width: 440px) {
+			flex-wrap: wrap;
+			margin: 0 auto 20px auto;
+		}
+	}
+
+	&__top-logo {
+		img {
+			max-width: 60%;
+		}
+	}
+
+	&__top-text {
+		display: flex;
+		gap: 15px;
+		font-size: 13px;
+			line-height: 16px;
+			color: #808899;
+			margin: 0;
+			font-family: "SuisseIntl";
+			font-style: normal;
+			font-weight: normal;
+		p {
+		}
+		a {
+			color: #0084D4;
+			text-decoration: underline;
+		}
+		@media(max-width: 440px) {
+			flex: 1 1 100%;
+		}
+	}
+
+	&__body {
+		background-color: white;
+		max-width: 440px;
+		padding: 40px;
+		margin: 0 auto;
+		box-shadow: 0px 42px 69px rgb(114 120 128 / 7%), 0px 17.5466px 34.8623px rgb(114 120 128 / 5%), 0px 9.38125px 18.6412px rgb(114 120 128 / 4%), 0px 5.25905px 10.1908px rgb(114 120 128 / 3%), 0px 2.79304px 5.20106px rgb(114 120 128 / 3%), 0px 1.16225px 2.04905px rgb(114 120 128 / 2%);
+		border-radius: 12px;
+		@media(max-width: 440px) {
+			padding: 20px;
+		}
+	}
+
+	&__title {
+		text-align: left;
+		font-weight: 600;
+		font-size: 28px;
+		line-height: 36px;
+		color: #474766;
+		font-family: "SuisseIntl";
+		margin-bottom: 8px;
+	}
+
+	&__subtitle {
+		text-align: left;
+		margin-bottom: 24px;
+		font-size: 16px;
+		line-height: 24px;
+		font-family: "SuisseIntl";
+		color: #808899;
+	}
+
+	&__item {
+		margin-bottom: 12px;
+		input {
+			display: inline-block;
+			width: 100%;
+			background: #FFFFFF;
+			border: 1px solid #CED1D9;
+			box-sizing: border-box;
+			border-radius: 6.47211px;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 16px;
+			padding: 16px;
+			box-shadow: none;
+			-webkit-box-shadow: none;
+			font-family: "SuisseIntl";
+		}
+	}
+
+	&__input {
+	}
+
+	&__button {
+		padding-top: 5px;
+		button {
+			height: inherit;
+			padding: 14px;
+			width: 100%;
+			background: #2589FF;
+			border-radius: 6px;
+			margin-bottom: 0px;
+			font-size: 16px;
+			font-weight: normal;
+			line-height: 20px;
+			text-align: center;
+			color: #FFFFFF;
+			font-family: "SuisseIntl";
+		}
+	}
+
+	&__bottom {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 16px;
+	}
+
+	&__link {
+		a {
+			font-family: "SuisseIntl";
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 20px;
+			color: #808899;
+			opacity: 0.7;
+			text-decoration: underline;
+		}
+	}
+}
+.button {
+}

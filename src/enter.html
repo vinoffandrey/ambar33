@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Вход"
+})
+
+<body>
+	@@include('html/_header.htm',{})
+	<section class="enter__section">
+		<div class="enter__container">
+			<div class="enter__top">
+				<div class="enter__top-logo">
+					<img src="img/enter/roistat_form_logo.png" alt="">
+				</div>
+				<div class="enter__top-text">
+					<p>Ещё нет аккаунта? </p>
+					<a href="">Зарегистрироваться</a>
+				</div>
+			</div>
+			<div class="enter__body">
+				<div class="enter__title">
+					<p>Вход в Roistat</p>
+				</div>
+				<div class="enter__subtitle">
+					<p>Всегда рады вас видеть</p>
+				</div>
+				<div class="enter__item">
+					<input type="" class="enter__input" placeholder="Email">
+				</div>
+				<div class="enter__item">
+					<input type="" class="enter__input" placeholder="Пароль">
+				</div>
+				<div class="enter__button">
+					<button class="button">Войти</button>
+				</div>
+				<div class="enter__bottom">
+					<div class="enter__link">
+						<a href="">Зарегистрироваться</a>
+					</div>
+					<div class="enter__link">
+						<a href="">Восстановить пароль</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>
