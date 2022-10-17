@@ -162,17 +162,17 @@
             V = [d, h],
             H = [d, c, u],
             N = [g],
-            R = function (e) {
+            q = function (e) {
               return !!e[p];
             },
-            q = function (e) {
+            R = function (e) {
               return e[p];
             },
             X = function (e) {
               return delete e[p];
             },
             Y = function (e, t) {
-              if (!R(e)) {
+              if (!q(e)) {
                 var i = {};
                 t.forEach(function (t) {
                   i[t] = e.getAttribute(t);
@@ -181,8 +181,8 @@
               }
             },
             j = function (e, t) {
-              if (R(e)) {
-                var i = q(e);
+              if (q(e)) {
+                var i = R(e);
                 t.forEach(function (t) {
                   !(function (e, t, i) {
                     i ? e.setAttribute(t, i) : e.removeAttribute(t);
@@ -307,7 +307,7 @@
               })(e),
                 oe(e, t, i),
                 (function (e) {
-                  R(e) || (e[p] = { backgroundImage: e.style.backgroundImage });
+                  q(e) || (e[p] = { backgroundImage: e.style.backgroundImage });
                 })(e),
                 (function (e, t, i) {
                   var s = C(e, t.data_bg),
@@ -377,8 +377,8 @@
                 t
                   ? t(e)
                   : (function (e) {
-                      if (R(e)) {
-                        var t = q(e);
+                      if (q(e)) {
+                        var t = R(e);
                         e.style.backgroundImage = t.backgroundImage;
                       }
                     })(e);
@@ -2019,7 +2019,7 @@
         F
       );
     }
-    const R = {
+    const q = {
       on(e, t, i) {
         const s = this;
         if ("function" != typeof t) return s;
@@ -2099,7 +2099,7 @@
         );
       },
     };
-    const q = {
+    const R = {
       updateSize: function () {
         const e = this;
         let t, i;
@@ -3818,8 +3818,8 @@
       };
     }
     const ce = {
-        eventsEmitter: R,
-        update: q,
+        eventsEmitter: q,
+        update: R,
         translate: X,
         transition: {
           setTransition: function (e, t) {
@@ -5304,18 +5304,18 @@
               this);
         }),
         (e.prototype.find = function (e) {
-          return Re(this._getSelector(e, this.selector));
+          return qe(this._getSelector(e, this.selector));
         }),
         (e.prototype.first = function () {
           return this.selector && void 0 !== this.selector.length
-            ? Re(this.selector[0])
-            : Re(this.selector);
+            ? qe(this.selector[0])
+            : qe(this.selector);
         }),
         (e.prototype.eq = function (e) {
-          return Re(this.selector[e]);
+          return qe(this.selector[e]);
         }),
         (e.prototype.parent = function () {
-          return Re(this.selector.parentElement);
+          return qe(this.selector.parentElement);
         }),
         (e.prototype.get = function () {
           return this._getFirstEl();
@@ -5502,7 +5502,7 @@
         (e.prototype.offset = function () {
           if (!this.firstElement) return { left: 0, top: 0 };
           var e = this.firstElement.getBoundingClientRect(),
-            t = Re("body").style().marginLeft;
+            t = qe("body").style().marginLeft;
           return {
             left: e.left - parseFloat(t) + this.scrollLeft(),
             top: e.top + this.scrollTop(),
@@ -5534,7 +5534,7 @@
         e
       );
     })();
-    function Re(e) {
+    function qe(e) {
       return (
         (function () {
           if ("function" == typeof window.CustomEvent) return !1;
@@ -5551,7 +5551,7 @@
         new Ne(e)
       );
     }
-    var qe = [
+    var Re = [
       "src",
       "sources",
       "subHtml",
@@ -5588,7 +5588,7 @@
     }
     var Ye = function (e, t, i, s) {
         void 0 === i && (i = 0);
-        var n = Re(e).attr("data-lg-size") || s;
+        var n = qe(e).attr("data-lg-size") || s;
         if (n) {
           var o = n.split(",");
           if (o[1])
@@ -5613,7 +5613,7 @@
       },
       je = function (e, t, i, s, n) {
         if (n) {
-          var o = Re(e).find("img").first();
+          var o = qe(e).find("img").first();
           if (o.get()) {
             var r = t.get().getBoundingClientRect(),
               a = r.width,
@@ -5626,14 +5626,14 @@
                 o.offset().left +
                 (parseFloat(u.paddingLeft) || 0) +
                 (parseFloat(u.borderLeft) || 0) +
-                Re(window).scrollLeft() +
+                qe(window).scrollLeft() +
                 r.left,
               p =
                 (l - c) / 2 -
                 o.offset().top +
                 (parseFloat(u.paddingTop) || 0) +
                 (parseFloat(u.borderTop) || 0) +
-                Re(window).scrollTop() +
+                qe(window).scrollTop() +
                 i;
             return (
               "translate3d(" +
@@ -5739,7 +5739,7 @@
               for (var o = arguments[t], r = 0, a = o.length; r < a; r++, n++)
                 s[n] = o[r];
             return s;
-          })(qe, t);
+          })(Re, t);
         return (
           [].forEach.call(e, function (e) {
             for (var t = {}, r = 0; r < e.attributes.length; r++) {
@@ -5750,7 +5750,7 @@
                 o.indexOf(l) > -1 && (d = l), d && (t[d] = a.value);
               }
             }
-            var c = Re(e),
+            var c = qe(e),
               u = c.find("img").first().attr("alt"),
               h = c.attr("title"),
               p = s ? c.attr(s) : c.find("img").first().attr("src");
@@ -5812,7 +5812,7 @@
             (it++,
             (this.lgId = it),
             (this.el = e),
-            (this.LGel = Re(e)),
+            (this.LGel = qe(e)),
             this.generateSettings(t),
             this.buildModules(),
             this.settings.dynamic &&
@@ -5875,7 +5875,7 @@
               var e = this,
                 t = function (t) {
                   var s = i.items[t],
-                    n = Re(s),
+                    n = qe(s),
                     o = Ne.generateUUID();
                   n.attr("data-lg-id", o).on(
                     "click.lgcustom-item-" + o,
@@ -5896,7 +5896,7 @@
           (e.prototype.buildModules = function () {
             var e = this;
             this.settings.plugins.forEach(function (t) {
-              e.plugins.push(new t(e, Re));
+              e.plugins.push(new t(e, qe));
             });
           }),
           (e.prototype.validateLicense = function () {
@@ -5910,7 +5910,7 @@
               : console.error("Please provide a valid license key");
           }),
           (e.prototype.getSlideItem = function (e) {
-            return Re(this.getSlideItemId(e));
+            return qe(this.getSlideItemId(e));
           }),
           (e.prototype.getSlideItemId = function (e) {
             return "#lg-item-" + this.lgId + "-" + e;
@@ -5919,7 +5919,7 @@
             return e + "-" + this.lgId;
           }),
           (e.prototype.getElementById = function (e) {
-            return Re("#" + this.getIdName(e));
+            return qe("#" + this.getIdName(e));
           }),
           (e.prototype.manageSingleSlideClassName = function () {
             this.galleryItems.length < 2
@@ -6013,9 +6013,9 @@
                   '" class="lg-components">\n                    ' +
                   (".lg-sub-html" === this.settings.appendSubHtmlTo ? i : "") +
                   "\n                </div>\n            </div>\n        </div>\n        ";
-              Re(this.settings.container).append(d),
+              qe(this.settings.container).append(d),
                 document.body !== this.settings.container &&
-                  Re(this.settings.container).css("position", "relative"),
+                  qe(this.settings.container).css("position", "relative"),
                 (this.outer = this.getElementById("lg-outer")),
                 (this.$lgComponents = this.getElementById("lg-components")),
                 (this.$backdrop = this.getElementById("lg-backdrop")),
@@ -6048,7 +6048,7 @@
                       '" download class="lg-download lg-icon"></a>'
                   ),
                 this.counter(),
-                Re(window).on(
+                qe(window).on(
                   "resize.lg.global" +
                     this.lgId +
                     " orientationchange.lg.global" +
@@ -6123,7 +6123,7 @@
             else if (this.settings.selector)
               if ("string" == typeof this.settings.selector)
                 if (this.settings.selectWithin) {
-                  var e = Re(this.settings.selectWithin);
+                  var e = qe(this.settings.selectWithin);
                   this.items = e.find(this.settings.selector).get();
                 } else
                   this.items = this.el.querySelectorAll(this.settings.selector);
@@ -6181,7 +6181,7 @@
                 this.LGel.trigger(Le),
                 this.getSlideItem(e).addClass("lg-current"),
                 (this.lGalleryOn = !1),
-                (this.prevScrollTop = Re(window).scrollTop()),
+                (this.prevScrollTop = qe(window).scrollTop()),
                 setTimeout(function () {
                   if (i.zoomFromOrigin && o) {
                     var t = i.getSlideItem(e);
@@ -6211,7 +6211,7 @@
                     i.LGel.trigger(Oe);
                 }),
                 document.body === this.settings.container &&
-                  Re("html").addClass("lg-on");
+                  qe("html").addClass("lg-on");
             }
           }),
           (e.prototype.getMediaContainerPosition = function () {
@@ -6287,15 +6287,15 @@
                   (t =
                     this.settings.subHtmlSelectorRelative &&
                     !this.settings.dynamic
-                      ? Re(this.items).eq(e).find(t).first().html()
-                      : Re(t).first().html());
+                      ? qe(this.items).eq(e).find(t).first().html()
+                      : qe(t).first().html());
               } else t = "";
             if (".lg-item" !== this.settings.appendSubHtmlTo)
               i
                 ? this.outer.find(".lg-sub-html").load(i)
                 : this.outer.find(".lg-sub-html").html(t);
             else {
-              var n = Re(this.getSlideItemId(e));
+              var n = qe(this.getSlideItemId(e));
               i
                 ? n.load(i)
                 : n.append('<div class="lg-sub-html">' + t + "</div>");
@@ -6345,7 +6345,7 @@
           }),
           (e.prototype.getDummyImageContent = function (e, t, i) {
             var s;
-            if ((this.settings.dynamic || (s = Re(this.items).eq(t)), s)) {
+            if ((this.settings.dynamic || (s = qe(this.items).eq(t)), s)) {
               var n = void 0;
               if (
                 !(n = this.settings.exThumbImage
@@ -6448,7 +6448,7 @@
           (e.prototype.loadContent = function (e, t) {
             var i = this,
               s = this.galleryItems[e],
-              n = Re(this.getSlideItemId(e)),
+              n = qe(this.getSlideItemId(e)),
               o = s.poster,
               r = s.srcset,
               a = s.sizes,
@@ -6523,7 +6523,7 @@
                   this.addHtml(e);
             }
             var T = 0;
-            v && !Re(document.body).hasClass("lg-from-hash") && (T = v),
+            v && !qe(document.body).hasClass("lg-from-hash") && (T = v),
               this.isFirstSlideWithZoomAnimation() &&
                 (setTimeout(function () {
                   n.removeClass(
@@ -6645,7 +6645,7 @@
                   i.$inner.append('<div id="' + e + '" class="lg-item"></div>');
               }),
               this.currentItemsInDom.forEach(function (e) {
-                -1 === s.indexOf(e) && Re("#" + e).remove();
+                -1 === s.indexOf(e) && qe("#" + e).remove();
               }),
               s
             );
@@ -6868,7 +6868,7 @@
                   (n.outer.find(".lg-item").removeAttr("style"),
                   o && Math.abs(e.pageX - t.pageX) < 5)
                 ) {
-                  var a = Re(i.target);
+                  var a = qe(i.target);
                   n.isPosterElement(a) && n.LGel.trigger(Ae);
                 }
                 n.swipeDirection = void 0;
@@ -6889,7 +6889,7 @@
               (this.$inner.on("touchstart.lg", function (i) {
                 e.dragOrSwipeEnabled = !0;
                 var s = e.getSlideItem(e.index);
-                (!Re(i.target).hasClass("lg-item") &&
+                (!qe(i.target).hasClass("lg-item") &&
                   !s.get().contains(i.target)) ||
                   e.outer.hasClass("lg-zoomed") ||
                   e.lgBusy ||
@@ -6917,7 +6917,7 @@
                 if ("swipe" === e.touchAction) {
                   if (s) (s = !1), e.touchEnd(i, t, o);
                   else if (n) {
-                    var r = Re(o.target);
+                    var r = qe(o.target);
                     e.isPosterElement(r) && e.LGel.trigger(Ae);
                   }
                   (e.touchAction = void 0), (n = !1);
@@ -6934,7 +6934,7 @@
               (this.outer.on("mousedown.lg", function (i) {
                 e.dragOrSwipeEnabled = !0;
                 var n = e.getSlideItem(e.index);
-                (Re(i.target).hasClass("lg-item") ||
+                (qe(i.target).hasClass("lg-item") ||
                   n.get().contains(i.target)) &&
                   (e.outer.hasClass("lg-zoomed") ||
                     e.lgBusy ||
@@ -6948,7 +6948,7 @@
                       e.outer.removeClass("lg-grab").addClass("lg-grabbing"),
                       e.LGel.trigger(Pe))));
               }),
-              Re(window).on("mousemove.lg.global" + this.lgId, function (o) {
+              qe(window).on("mousemove.lg.global" + this.lgId, function (o) {
                 s &&
                   e.lgOpened &&
                   ((n = !0),
@@ -6956,9 +6956,9 @@
                   e.touchMove(t, i),
                   e.LGel.trigger(ke));
               }),
-              Re(window).on("mouseup.lg.global" + this.lgId, function (o) {
+              qe(window).on("mouseup.lg.global" + this.lgId, function (o) {
                 if (e.lgOpened) {
-                  var r = Re(o.target);
+                  var r = qe(o.target);
                   n
                     ? ((n = !1), e.touchEnd(i, t, o), e.LGel.trigger(De))
                     : e.isPosterElement(r) && e.LGel.trigger(Ae),
@@ -6972,7 +6972,7 @@
             var e = this;
             this.$inner.on("click.lg", function (t) {
               !e.dragOrSwipeEnabled &&
-                e.isPosterElement(Re(t.target)) &&
+                e.isPosterElement(qe(t.target)) &&
                 e.LGel.trigger(Ae);
             });
           }),
@@ -7032,7 +7032,7 @@
           }),
           (e.prototype.keyPress = function () {
             var e = this;
-            Re(window).on("keydown.lg.global" + this.lgId, function (t) {
+            qe(window).on("keydown.lg.global" + this.lgId, function (t) {
               e.lgOpened &&
                 !0 === e.settings.escKey &&
                 27 === t.keyCode &&
@@ -7125,7 +7125,7 @@
           }),
           (e.prototype.invalidateItems = function () {
             for (var e = 0; e < this.items.length; e++) {
-              var t = Re(this.items[e]);
+              var t = qe(this.items[e]);
               t.off("click.lgcustom-item-" + t.attr("data-lg-id"));
             }
           }),
@@ -7138,14 +7138,14 @@
               }),
                 this.settings.closeOnTap &&
                   (this.outer.on("mousedown.lg", function (i) {
-                    var s = Re(i.target);
+                    var s = qe(i.target);
                     t = !!e.isSlideElement(s);
                   }),
                   this.outer.on("mousemove.lg", function () {
                     t = !1;
                   }),
                   this.outer.on("mouseup.lg", function (i) {
-                    var s = Re(i.target);
+                    var s = qe(i.target);
                     e.isSlideElement(s) &&
                       t &&
                       (e.outer.hasClass("lg-dragging") || e.closeGallery());
@@ -7155,7 +7155,7 @@
           (e.prototype.closeGallery = function (e) {
             var t = this;
             if (!this.lgOpened || (!this.settings.closable && !e)) return 0;
-            this.LGel.trigger(Fe), Re(window).scrollTop(this.prevScrollTop);
+            this.LGel.trigger(Fe), qe(window).scrollTop(this.prevScrollTop);
             var i,
               s = this.items[this.index];
             if (this.zoomFromOrigin && s) {
@@ -7190,7 +7190,7 @@
               (this.zoomFromOrigin = this.settings.zoomFromOrigin),
               clearTimeout(this.hideBarTimeout),
               (this.hideBarTimeout = !1),
-              Re("html").removeClass("lg-on"),
+              qe("html").removeClass("lg-on"),
               this.outer.removeClass("lg-visible lg-components-open"),
               this.$backdrop.removeClass("in").css("opacity", 0);
             var u =
@@ -7264,7 +7264,7 @@
               setTimeout(function () {
                 e.destroyModules(!0),
                   e.settings.dynamic || e.invalidateItems(),
-                  Re(window).off(".lg.global" + e.lgId),
+                  qe(window).off(".lg.global" + e.lgId),
                   e.LGel.off(".lg"),
                   e.$container.remove();
               }, t),
@@ -8768,7 +8768,12 @@
                 }
               );
             });
-          }))),
+          })));
+    const Ht = document.querySelector(".profile__body-arrow"),
+      Nt = document.querySelector(".profile__body-left");
+    Ht.addEventListener("click", () => {
+      Nt.classList.toggle("active");
+    }),
       (window.FLS = !0),
       (function (e) {
         let t = new Image();

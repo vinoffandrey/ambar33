@@ -9,6 +9,11 @@
 		display: flex;
 		gap: 20px;
 		padding: 6px 5px;
+		position: fixed;
+		width: 100%;
+		left: 0;
+		top: 0;
+		z-index: 1;
 	}
 
 	&__top-block {
@@ -120,22 +125,64 @@
 
 	&__body {
 		display: flex;
+		margin-top: 40px;
+	}
+
+	&__body-wrapper {
+		flex: 1 1 auto;
+	}
+
+	&__body-arrow {
+		flex: 0 1 auto;
+		background: rgba(184, 184, 197, 0.15);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 10px;
+		padding: 6px 0;
+		cursor: pointer;
+		transition: all .3s ease 0s;
+		width: 30px;
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+		@media (any-hover: hover){
+			&:hover{
+				background-color: rgba(0,0,0,0.2); 
+			} 
+		}
+		.active & {
+			img {
+				transform: rotate(180deg);
+			}
+		}
 	}
 
 	&__body-left {
 		flex: 0 0 50px;
 		background-color: #3E414B;
-		@media (any-hover: hover){
-			&:hover{
-				span {
-					display: block;
-				} 
-			} 
+		display: flex;
+		flex-direction: column;
+		position: fixed;
+		height: calc(100vh - 40px);
+		left: 0;
+		top: 40px;
+		z-index: 1;
+		.menu-open & {
+			z-index: 0;
+		}
+		&.active {
+			align-items: flex-end;
+			span {
+				display: block;
+			}
 		}
 	}
 
 	&__body-right {
 		flex: 1 1 auto;
+		margin-left: 50px;
 	}
 
 	&__left-item {
