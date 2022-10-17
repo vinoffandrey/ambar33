@@ -1551,6 +1551,103 @@ body.popup-show::after {
   height: 15px;
 }
 
+.icons__body {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 0;
+  justify-content: center;
+  row-gap: 30px;
+}
+@media (max-width: 600px) {
+  .icons__body {
+    justify-content: space-between !important;
+  }
+}
+.icons__item {
+  flex: 0 1 16.666%;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 900px) {
+  .icons__item {
+    flex: 0 1 33.333% !important;
+  }
+}
+@media (max-width: 600px) {
+  .icons__item {
+    flex: 0 1 50% !important;
+  }
+}
+@media (max-width: 440px) {
+  .icons__item {
+    flex: 1 1 100% !important;
+  }
+}
+.icons__item span {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  margin-bottom: 10px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.3s ease 0s;
+}
+@media (max-width: 600px) {
+  .icons__item span {
+    width: 50px !important;
+    height: 50px !important;
+  }
+}
+.icons__item p {
+  transition: all 0.3s ease 0s;
+  text-align: center;
+}
+.icons__item:nth-child(1) span {
+  background-image: url("../img/Icons_gray/icons_ambar-03.svg");
+}
+.icons__item:nth-child(2) span {
+  background-image: url("../img/Icons_gray/icons_ambar-01.svg");
+}
+.icons__item:nth-child(3) span {
+  background-image: url("../img/Icons_gray/icons_ambar-02.svg");
+}
+.icons__item:nth-child(4) span {
+  background-image: url("../img/Icons_gray/icons_ambar-06.svg");
+}
+.icons__item:nth-child(5) span {
+  background-image: url("../img/Icons_gray/icons_ambar-05.svg");
+}
+.icons__item:nth-child(6) span {
+  background-image: url("../img/Icons_gray/icons_ambar-04.svg");
+}
+@media (any-hover: hover) {
+  .icons__item:hover p {
+    color: #E87C1A !important;
+  }
+  .icons__item:hover:nth-child(1) span {
+    background-image: url("../img/Icons_orange/icons_ambar_orange-03.svg") !important;
+  }
+  .icons__item:hover:nth-child(2) span {
+    background-image: url("../img/Icons_orange/icons_ambar_orange-01.svg") !important;
+  }
+  .icons__item:hover:nth-child(3) span {
+    background-image: url("../img/Icons_orange/icons_ambar_orange-02.svg") !important;
+  }
+  .icons__item:hover:nth-child(4) span {
+    background-image: url("../img/Icons_orange/icons_ambar_orange-06.svg") !important;
+  }
+  .icons__item:hover:nth-child(5) span {
+    background-image: url("../img/Icons_orange/icons_ambar_orange-05.svg") !important;
+  }
+  .icons__item:hover:nth-child(6) span {
+    background-image: url("../img/Icons_orange/icons_ambar_orange-04.svg") !important;
+  }
+}
+
 .reviews__container {
   margin-bottom: 86px;
 }
