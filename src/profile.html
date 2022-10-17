@@ -294,6 +294,17 @@
 			</div>
 		</section>
 	</div>
+	<script>
+		function arrowsFunction() {
+			const arrowsProfile = document.querySelector('.profile__body-arrow');
+			const arrowsWrapper = document.querySelector('.profile__body-left');
+
+			arrowsProfile.addEventListener('click', function () {
+				arrowsWrapper.classList.toggle('active')
+			});
+		}
+		arrowsFunction();
+	</script>
 	@@include('html/_popup.htm',{})
 	@@include('html/_js.htm',{})
 </body>

@@ -148,9 +148,3 @@ function documentActions(e) {
 }
 
 
-const arrowProfile = document.querySelector('.profile__body-arrow');
-const arrowWrapper = document.querySelector('.profile__body-left');
-
-arrowProfile.addEventListener('click', () => {
-	arrowWrapper.classList.toggle('active');
-})
