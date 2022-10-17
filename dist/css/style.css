@@ -3085,6 +3085,56 @@ body.popup-show::after {
   display: inline-block;
   width: 100%;
 }
+.profile__body {
+  display: flex;
+}
+.profile__body-left {
+  flex: 0 0 50px;
+  background-color: #3E414B;
+}
+@media (any-hover: hover) {
+  .profile__body-left:hover span {
+    display: block;
+  }
+}
+.profile__body-right {
+  flex: 1 1 auto;
+}
+.profile__left-item img {
+  max-width: 100%;
+  height: auto;
+  color: white;
+  fill: white;
+}
+.profile__left-item a {
+  padding: 17px;
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  transition: all 0.3s ease 0s;
+  position: relative;
+  gap: 15px;
+}
+@media (any-hover: hover) {
+  .profile__left-item a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
+.profile__left-item a img {
+  flex: 0 1 18px;
+  max-width: 100%;
+  height: auto;
+  width: 16px;
+}
+.profile__left-item a span {
+  display: none;
+  flex: 1 1 auto;
+  color: white;
+  padding-right: 10px;
+}
+.profile__left-item.active {
+  background-color: #2589FF;
+}
 .profile__title {
   font-size: 18px;
   line-height: 26px;

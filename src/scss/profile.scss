@@ -119,6 +119,61 @@
 	}
 
 	&__body {
+		display: flex;
+	}
+
+	&__body-left {
+		flex: 0 0 50px;
+		background-color: #3E414B;
+		@media (any-hover: hover){
+			&:hover{
+				span {
+					display: block;
+				} 
+			} 
+		}
+	}
+
+	&__body-right {
+		flex: 1 1 auto;
+	}
+
+	&__left-item {
+		img {
+			max-width: 100%;
+			height: auto;
+			color: white;
+			fill: white;
+		}
+		a {
+			padding: 17px;
+			display: inline-flex;
+			align-items: center;
+			width: 100%;
+			transition: all .3s ease 0s;
+			position: relative;
+			gap: 15px;
+			@media (any-hover: hover){
+				&:hover{
+					background-color: rgba(0,0,0,0.2); 
+				} 
+			}
+			img {
+				flex: 0 1 18px;
+				max-width: 100%;
+				height: auto;
+				width: 16px;
+			}
+			span {
+				display: none;
+				flex: 1 1 auto;
+				color: white;
+				padding-right: 10px;
+			}
+		}
+		&.active {
+			background-color: #2589FF;
+		}
 	}
 
 	&__title {
